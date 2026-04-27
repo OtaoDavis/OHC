@@ -1,0 +1,429 @@
+/* ═══════════════════════════════════════════════════════════
+   OHC COURSE DETAIL STYLES
+   Designed for: Phase 01 — Financial Markets Basics
+   Layout: Horizontal Split Hero (Text Left / Interactive Video Right)
+═══════════════════════════════════════════════════════════ */
+
+/* ─── GLOBAL DESIGN TOKENS ─── */
+:root {
+  --navy: #273a68;
+  --navy-dark: #1a2847;
+  --navy-deeper: #111e38;
+  --teal: #2394a0;
+  --teal-light: #3ab5c3;
+  --white: #ffffff;
+  --off-white: #f7f8fc;
+  --text-body: #3d4f6e;
+  --text-muted: #7888a4;
+  --border: rgba(39, 58, 104, 0.12);
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Outfit", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ─── UTILITIES ─── */
+.bg-navy {
+  background-color: var(--navy-deeper);
+  color: var(--white);
+}
+.bg-off-white {
+  background-color: var(--off-white);
+}
+.text-white {
+  color: var(--white);
+}
+.text-center {
+  text-align: center;
+}
+
+/* ─── NAVIGATION OVERRIDE ─── */
+/* Ensures the nav is visible and clean on the course page */
+.nav--course {
+  background: var(--white) !important;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+}
+
+/* ─── HERO SPLIT (HORIZONTAL) ─── */
+.course-hero {
+  background: #ffffff;
+  padding: 40px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background accent behind text */
+.course-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: var(--off-white);
+  z-index: 0;
+}
+
+.course-hero__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Content Styles */
+.course-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5.5vw, 76px);
+  line-height: 1.05;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.course-hero__title em {
+  color: var(--teal);
+  font-style: italic;
+}
+
+.course-hero__slogan {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.course-hero__philosophy {
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+.course-hero__philosophy p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-body);
+  margin-bottom: 15px;
+}
+
+.course-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scroll-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+}
+
+/* ─── VIDEO WINDOW (RIGHT SIDE) ─── */
+.video-frame {
+  position: relative;
+  background: #000;
+  border-radius: 12px;
+  padding-top: 32px; /* Top bar space */
+  box-shadow: 0 40px 80px rgba(39, 58, 104, 0.2);
+  border: 1px solid var(--navy);
+  overflow: hidden;
+}
+
+/* Decorative UI Dots (Pointer events none to allow clicking through) */
+.video-frame__browser-dots {
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  display: flex;
+  gap: 6px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.video-frame__browser-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.video-frame__video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* Sits behind the dots but is the main interactive layer */
+}
+
+/* Interactive Caption Overlay */
+.video-frame__caption {
+  background: var(--navy-dark);
+  color: var(--white);
+  padding: 14px 20px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none; /* Prevents caption from blocking controls */
+}
+
+/* Animated Pulse Dot */
+.pulse-icon {
+  width: 8px;
+  height: 8px;
+  background: var(--teal-light);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(58, 181, 195, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(58, 181, 195, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(58, 181, 195, 0);
+  }
+}
+
+/* ─── STRUGGLE SECTION ─── */
+.struggle__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.struggle__list {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.struggle__list li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-body);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.struggle__list li::before {
+  content: "✕";
+  color: var(--teal);
+  margin-right: 18px;
+  font-weight: 700;
+}
+
+.rounded-img {
+  border-radius: 6px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── OUTCOMES (BASE LAYER) ─── */
+.outcomes {
+  padding: 100px 0;
+}
+.outcomes__header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.outcomes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+.outcome-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 45px 35px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition);
+}
+.outcome-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+}
+.outcome-num {
+  display: block;
+  font-family: var(--font-mono);
+  color: var(--teal-light);
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+.outcome-card p {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: var(--font-display);
+}
+
+/* ─── CURRICULUM STACK ─── */
+.module-stack {
+  margin-top: 50px;
+}
+.module {
+  background: var(--white);
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.module__header {
+  padding: 25px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+}
+.module__header span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--teal);
+}
+.module__header h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--navy);
+}
+.module__body {
+  padding: 35px;
+  background: var(--off-white);
+  border-top: 1px solid var(--border);
+}
+.module__body ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 40px;
+  list-style: none;
+}
+.module__body li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 15px;
+  color: var(--text-body);
+}
+.module__body li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+}
+
+/* ─── INSTRUCTOR PROFILE ─── */
+.instructor__grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+.instructor__img img {
+  border-radius: 6px;
+  box-shadow: 20px 20px 0 var(--teal);
+}
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.expertise-tags span {
+  background: var(--navy);
+  color: var(--white);
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+/* ─── FAQ ─── */
+.faq__item {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+.faq__item h4 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+/* ─── RESPONSIVE ADJUSTMENTS ─── */
+@media (max-width: 1100px) {
+  .course-hero__grid {
+    gap: 40px;
+  }
+  .struggle__grid,
+  .instructor__grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .course-hero {
+    padding: 120px 0 60px;
+  }
+  .course-hero__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .course-hero__philosophy {
+    margin: 0 auto 40px;
+  }
+  .course-hero::after {
+    display: none;
+  }
+  .video-frame {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .struggle__grid,
+  .instructor__grid {
+    grid-template-columns: 1fr;
+  }
+  .instructor__img {
+    order: 2;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .instructor__content {
+    order: 1;
+  }
+
+  .module__body ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-hero__title {
+    font-size: 44px;
+  }
+  .module__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .module__header h3 {
+    font-size: 22px;
+  }
+  .outcome-card {
+    padding: 30px 20px;
+  }
+}
