@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OHC Trade Room — Mastery in Global Investing & Trading</title>
+    <title>OHC Trade Room — Mastery in Global Investing and Trading</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -30,7 +29,7 @@
           </svg>
           support@ohctraderroom.com
         </a>
-        <a href="tel:+6281305558700" class="topbar__link">
+        <a href="tel:+2347047779807" class="topbar__link">
           <svg
             width="13"
             height="13"
@@ -43,708 +42,639 @@
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z"
             />
           </svg>
-          (+62)81 305 558 700
+          +234 704 777 9807
         </a>
       </div>
     </div>
-
-    <!-- NAV -->
-    <nav class="nav" id="nav">
-      <div class="nav__inner">
-        <a href="#" class="nav__logo">
-          <img
-            src="dark1.png"
-            alt="OHC Trade Room"
-            class="nav__logo-img nav__logo-img--dark"
-          />
-          <img
-            src="logo-dark.png"
-            alt="OHC Trade Room"
-            class="nav__logo-img nav__logo-img--light"
-          />
-        </a>
+    <!-- HEADER -->
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="#" class="nav__logo"
+          ><img src="logo-dark.png" alt="OHC Logo"
+        /></a>
         <ul class="nav__links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#pillars">Framework</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#solution">Framework</a></li>
+          <li><a href="index.html#ecosystem">Ecosystem</a></li>
+          <li><a href="courses.html">Courses</a></li>
         </ul>
-        <a href="#" class="btn btn--teal nav__cta"> Login &nbsp;→ </a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-          <span class="hamburger__line"></span>
-        </button>
+        <a href="#" class="btn btn--teal">Login &nbsp; →</a>
       </div>
     </nav>
 
-    <!-- Mobile Nav Overlay (outside nav to avoid fixed positioning inheritance) -->
-    <div class="mobile-nav" id="mobileNav">
-      <button
-        class="mobile-nav__close"
-        id="mobileNavClose"
-        aria-label="Close menu"
-      >
-        ✕
-      </button>
-      <ul class="mobile-nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#pillars">Framework</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-      </ul>
-      <a href="#" class="btn btn--teal mobile-nav__cta">Login &nbsp;→</a>
-      <div class="mobile-nav__contact">
-        <a href="mailto:support@ohctraderroom.com">support@ohctraderroom.com</a>
-        <a href="tel:+6281305558700">(+62)81 305 558 700</a>
-      </div>
-    </div>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero__video-wrap">
-        <video class="hero__video" autoplay muted loop playsinline>
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-abstract-finance-charts-in-the-dark-4557-large.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="hero__overlay"></div>
-      </div>
-
-      <!-- Hero two-column grid -->
-      <div class="hero__grid">
-        <!-- LEFT: text content -->
-        <div class="hero__content">
-          <div class="hero__eyebrow">Institutional Grade Trading Education</div>
-          <h1 class="hero__title">
-            Your Gateway to<br />
-            Mastery in<br />
-            <span class="hero__teal">Global Investing</span><br />
-            <span class="hero__outline">and Trading.</span>
-          </h1>
-          <p class="hero__sub">
-            Trading isn't about being glued to a screen all day; it's about
-            precision, timing, and discipline. Our approach focuses on
-            identifying high-probability setups, executing with clarity, and
-            exiting efficiently — often within minutes.
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__header">
+          <h1>From £10K to <span class="teal-text">Financial Freedom</span></h1>
+          <p>
+            Learn how to build capital, structure investments, and create
+            long-term wealth
           </p>
-          <div class="hero__actions">
-            <a href="#pricing" class="btn btn--teal btn--lg"
-              >Start Free Journey</a
-            >
-            <a href="#" class="btn btn--ghost btn--lg">
-              <span class="play-icon">▶</span> Watch Intro
-            </a>
-          </div>
-          <a href="#" class="hero__manifesto-link">
-            ↓ &nbsp; Download the OHC Trader Manifesto
-          </a>
         </div>
 
-        <!-- RIGHT: subtle video fading into background -->
-        <div class="hero__right-panel">
-          <div class="hero__right-video-wrap">
-            <video class="hero__right-video" autoplay muted loop playsinline>
-              <source
-                src="https://assets.mixkit.co/videos/9607/9607-360.mp4"
-                type="video/mp4"
-              />
+        <div class="hero__grid">
+          <!-- LEFT: VIDEO CARD (Triggers Modal) -->
+          <div class="hero-card card--video" id="openVideo">
+            <!-- Muted looping preview focused on the left -->
+            <video autoplay muted loop playsinline>
+              <source src="videos/intro.mp4" type="video/mp4" />
             </video>
-            <div class="hero__right-fade"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__scroll-cue">
-        <div class="hero__scroll-line"></div>
-        <span>SCROLL</span>
-      </div>
-    </section>
-
-    <!-- STATS BAND -->
-    <div class="stats-band">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat">
-            <div class="stat__n">14,000<span>+</span></div>
-            <div class="stat__l">Students Trained</div>
-          </div>
-          <div class="stat__d"></div>
-          <div class="stat">
-            <div class="stat__n">98.3<span>%</span></div>
-            <div class="stat__l">Five-Star Satisfaction</div>
-          </div>
-          <div class="stat__d"></div>
-          <div class="stat">
-            <div class="stat__n">6<span>yrs</span></div>
-            <div class="stat__l">Track Record</div>
-          </div>
-          <div class="stat__d"></div>
-          <div class="stat">
-            <div class="stat__n">5</div>
-            <div class="stat__l">Structured Phases</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="about section" id="about">
-      <div class="container">
-        <div class="about__grid">
-          <div class="about__visuals">
-            <div class="about__img-a">
-              <img src="img2.png" alt="Professional trader" />
-            </div>
-            <div class="about__img-b">
-              <img src="img1.png" alt="OHC professional" />
-            </div>
-            <div class="about__rating-card">
-              <div class="about__stars">★ ★ ★ ★ ★</div>
-              <div class="about__rating-title">Five Star Rating</div>
-              <p>
-                Our traders don't just learn — they perform. Students who've
-                applied what they learned rate their experience five stars.
-              </p>
+            <div class="play-btn-overlay">
+              <div class="play-btn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="var(--teal)"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
             </div>
           </div>
-          <div class="about__content">
-            <div class="section-label">Who We Are</div>
-            <h2 class="section-title">
-              Experts in Global<br />Markets Trading<br /><em>and Investing</em>
-            </h2>
-            <p class="body-text">
-              We empower investors and traders through advanced tools, real-time
-              market intelligence, and a structured training pathway that
-              supports informed decision-making and consistent performance
-              across all market cycles.
-            </p>
-            <p class="body-text">
-              The learning journey can be compared to the development of a
-              professional surgeon — first comes mastering the science, then
-              procedural techniques, then supervised practice, and finally
-              real-world execution. Skipping stages leads to failure.
-            </p>
-            <a
-              href="#courses"
-              class="btn btn--navy btn--lg"
-              style="margin-top: 24px"
-              >Explore Courses &nbsp;→</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- WHY OHC -->
-    <section class="why" id="pillars">
-      <div class="why__photo-col">
-        <img src="founder2.png" alt="Gabriel Olumide Odediran" />
-        <div class="why__photo-cap">
-          <div class="why__photo-name">Gabriel Olumide Odediran</div>
-          <div class="why__photo-role">Founder &amp; Lead Strategist</div>
-        </div>
-      </div>
-      <div class="why__text-col">
-        <div class="section-label">Why Choose OHC Trade Room</div>
-        <h2 class="section-title why__title">
-          Built on <em>Six Core<br />Pillars</em> of Excellence
-        </h2>
-        <p class="why__body">
-          Our investment framework is designed to help you dominate global
-          markets and deliver sustainable long-term returns:
-        </p>
-        <ul class="why__list">
-          <li>
-            <span class="chk">✓</span>Comprehensive due diligence — fundamental,
-            technical, and sentiment analysis
-          </li>
-          <li>
-            <span class="chk">✓</span>Evaluate potential scenarios and outcomes
-          </li>
-          <li>
-            <span class="chk">✓</span>Select and structure the appropriate
-            strategy
-          </li>
-          <li>
-            <span class="chk">✓</span>Execute the trade with institutional
-            precision
-          </li>
-          <li>
-            <span class="chk">✓</span>Monitor performance and adjust when
-            necessary
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- DOMINATE CARDS -->
-    <div class="dominate-band">
-      <div class="container">
-        <div class="dominate-grid">
-          <div class="dom-card">
-            <div class="dom-card__icon">
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
+          <!-- MIDDLE: SPLIT CONTENT CARD -->
+          <div class="hero-card card--content">
+            <div style="display: flex; flex-direction: column; height: 100%">
+              <div
+                style="display: flex; gap: 25px; flex: 1; align-items: center"
               >
-                <circle cx="12" cy="12" r="3" />
-                <path
-                  d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"
-                />
-              </svg>
-            </div>
-            <h4>Dominate Your Time</h4>
-            <p>
-              High-probability setups, precise execution, and deliberate risk
-              management — so traders stay focused and efficient.
-            </p>
-          </div>
-          <div class="dom-card">
-            <div class="dom-card__icon">
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
+                <div class="card-content-video">
+                  <video autoplay muted loop playsinline>
+                    <source src="videos/market-loop.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div style="flex: 1.2">
+                  <p style="font-size: 15px; color: var(--navy-light)">
+                    Trading isn’t about being glued to a screen all day; it’s
+                    about precision, timing, and discipline. Our approach
+                    focuses on identifying high-probability setups, executing
+                    with clarity, and exiting efficiently—often within minutes.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="Dominate-your-time-1.pdf"
+                class="manifesto-link"
+                download
               >
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                  />
+                </svg>
+                Download the OHC Trader Manifesto
+              </a>
             </div>
-            <h4>Dominate Your Pattern</h4>
-            <p>
-              Disciplined approach to market cycles, key price levels, and
-              patient well-defined setups for consistent results.
-            </p>
           </div>
-          <div class="dom-card">
-            <div class="dom-card__icon">
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="17" x2="12.01" y2="17" />
-              </svg>
-            </div>
-            <h4>Dominate Your Mind</h4>
-            <p>
-              Risk awareness, emotional discipline, and clear structure —
-              guiding decisions by process and probability, not emotion.
-            </p>
-          </div>
-          <div class="dom-card">
-            <div class="dom-card__icon">
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                />
-              </svg>
-            </div>
-            <h4>Dominate Your Body</h4>
-            <p>
-              Sustainable trading requires physical and mental wellbeing —
-              balance through routine, rest, and clarity.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- COURSES -->
-    <section class="courses section" id="courses">
-      <div class="container">
-        <div class="courses__hdr">
-          <div>
-            <div class="section-label">Our Programs</div>
-            <h2 class="section-title">
-              The Five Phases of<br /><em>Trading Mastery.</em>
-            </h2>
-          </div>
-          <a href="#" class="btn btn--teal">Enrolled? Sign In &nbsp;→</a>
-        </div>
-
-        <!-- PHASE 01 -->
-        <div class="course-item">
-          <div class="course-item__img">
-            <img src="basics.webp" alt="Financial Markets Basics" />
-            <div class="ci-badge ci-badge--free">Free</div>
-          </div>
-          <div class="course-item__body">
-            <div class="section-label">Phase 01</div>
-            <h3>Financial Markets Basics</h3>
-            <p>
-              This program breaks down the core structure of modern financial
-              markets, including equities, fixed income, commodities, and
-              foreign exchange. Through engaging modules, you’ll learn how
-              markets are formed, what drives price movements, and how key
-              economic indicators influence trends.
-            </p>
-            <ul class="ci-outcomes">
-              <li>
-                <span class="chk-t">✓</span> The universe of financial
-                securities and the standard investment process
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Basics of how financial instruments
-                are valued
-              </li>
-            </ul>
-            <div class="ci-footer">
-              <div class="ci-price ci-price--free">Free</div>
-              <a href="course-basics.html" class="btn btn--teal"
-                >View Details &nbsp;→</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 02 -->
-        <div class="course-item course-item--flip">
-          <div class="course-item__img">
-            <img
-              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=80"
-              alt="Fixed Income Analysis"
-            />
-            <div class="ci-badge">$250</div>
-          </div>
-          <div class="course-item__body">
-            <div class="section-label">Phase 02</div>
-            <h3>Fixed Income Analysis & Investments</h3>
-            <p>
-              This course provides a comprehensive understanding of fixed income
-              securities, focusing on valuation, yield analysis, interest rate
-              dynamics, and portfolio construction. Ideal for those looking to
-              understand bonds as both investment and risk management tools.
-            </p>
-            <ul class="ci-outcomes">
-              <li>
-                <span class="chk-t">✓</span> Bonds and the debt capital markets
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Bond yields, and how credit and
-                interest rate risks factor into pricing
-              </li>
-            </ul>
-            <div class="ci-footer">
-              <div class="ci-price">$250</div>
-              <a href="course-fixed-income.html" class="btn btn--navy"
-                >View Details &nbsp;→</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 03 -->
-        <div class="course-item">
-          <div class="course-item__img">
-            <img src="img2.png" alt="Equity Analysis" />
-            <div class="ci-badge">$250</div>
-          </div>
-          <div class="course-item__body">
-            <div class="section-label">Phase 03</div>
-            <h3>Equity Analysis and Investments</h3>
-            <p>
-              Equips participants with the tools and frameworks used by
-              professional investors to evaluate equities. It blends fundamental
-              analysis with market insights to support informed equity
-              investment decisions.
-            </p>
-            <ul class="ci-outcomes">
-              <li>
-                <span class="chk-t">✓</span> Comprehensive introduction to
-                equity investments
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Evaluate intrinsic value (Economic,
-                Financial, Qual/Quant)
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Exploration of tools and techniques
-                for trading success
-              </li>
-            </ul>
-            <div class="ci-footer">
-              <div class="ci-price">$250</div>
-              <a href="course-equity.html" class="btn btn--teal"
-                >View Details &nbsp;→</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 04 -->
-        <div class="course-item course-item--flip">
-          <div class="course-item__img">
-            <img src="item4.png" alt="Derivatives" />
-            <div class="ci-badge">$500</div>
-          </div>
-          <div class="course-item__body">
-            <div class="section-label">Phase 04</div>
-            <h3>Derivatives 101: Valuation & Greeks</h3>
-            <p>
-              A deep dive into the mathematics of options and the impact of
-              volatility. Learn to master Greeks and design strategies that
-              maximize profits using institutional-grade techniques.
-            </p>
-            <ul class="ci-outcomes">
-              <li>
-                <span class="chk-t">✓</span> Comprehensive exploration of
-                options trading strategies
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Understanding the mathematics and
-                Greeks of options
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Strategies to maximize profits with
-                debit/credit options
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Techniques for optimizing and
-                fine-tuning positions
-              </li>
-            </ul>
-            <div class="ci-footer">
-              <div class="ci-price">$500</div>
-              <a href="course-derivatives.html" class="btn btn--navy"
-                >View Details &nbsp;→</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 05 -->
-        <div class="course-item">
-          <div class="course-item__img">
-            <img src="img1.png" alt="Day Trading LMRSS" />
-            <div class="ci-badge ci-badge--premium">$1,000</div>
-          </div>
-          <div class="course-item__body">
-            <div class="section-label">Phase 05 — The System</div>
-            <h3>Day Trading LMRSS</h3>
-            <p>
-              The flagship program. Practical application of the LMRSS system
-              for high-probability intraday execution. Learn to generate
-              consistent income through advanced structured strategies and
-              professional risk management.
-            </p>
-            <ul class="ci-outcomes">
-              <li>
-                <span class="chk-t">✓</span> Insights into the impact of
-                volatility on execution
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Generating income with advanced
-                credit strategies
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Techniques for high-frequency price
-                action analysis
-              </li>
-              <li>
-                <span class="chk-t">✓</span> Lifetime access to the LMRSS
-                community
-              </li>
-            </ul>
-            <div class="ci-footer">
-              <div class="ci-price">$1,000</div>
-              <a href="course-lmrss.html" class="btn btn--teal"
-                >View Details &nbsp;→</a
-              >
+          <!-- RIGHT: SLIDESHOW CARD -->
+          <div class="hero-card card--slideshow">
+            <div class="slideshow-container">
+              <img src="lifestyle-1.jpg" alt="OHC Lifestyle 1" />
+              <img src="lifestyle-2.jpg" alt="OHC Lifestyle 2" />
+              <img src="lifestyle-3.jpg" alt="OHC Lifestyle 3" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRICING -->
-    <section class="pricing section" id="pricing">
+    <!-- 2. PROBLEM SECTION -->
+    <section class="section section--problem" id="problem">
       <div class="container">
-        <div class="pricing__hdr">
-          <div>
-            <div class="section-label">Define Your Trajectory</div>
-            <h2 class="section-title">
-              Sequential Learning<br /><em>Pricing Structure</em>
-            </h2>
-          </div>
-          <p class="pricing__desc">
-            The OHC journey is designed to be taken in sequence. Move from
-            foundational understanding to sophisticated derivative strategies
-            and eventually to the LMRSS proprietary system.
+        <div style="text-align: center; max-width: 850px; margin: 0 auto 60px">
+          <span class="problem-label">The Market Reality</span>
+          <h2>Why most participants fail to scale</h2>
+          <p>
+            Trading and investing are often marketed as "shortcuts." The
+            institutional reality is that without a structured operating system,
+            you are simply reacting to noise rather than executing a plan.
           </p>
         </div>
 
-        <div class="pricing__stack">
-          <!-- Basics -->
-          <div class="pr-row">
-            <div class="pr-row__left">
-              <div class="pr-row__phase">
-                Phase 01: Financial Markets Basics
-              </div>
-              <p class="body-text" style="font-size: 14px">
-                Foundational knowledge of global securities and valuation.
-              </p>
-            </div>
-            <div class="pr-row__right">
-              <div class="pr-price pr-price--free">Free</div>
-              <a href="#" class="btn btn--teal">Start Free</a>
-            </div>
-          </div>
-
-          <!-- Fixed Income -->
-          <div class="pr-row pr-row--alt">
-            <div class="pr-row__left">
-              <div class="pr-row__phase">Phase 02: Fixed Income Analysis</div>
-              <p class="body-text" style="font-size: 14px">
-                Yield curves, debt capital markets, and interest rate risk.
-              </p>
-            </div>
-            <div class="pr-row__right">
-              <div class="pr-price">$250</div>
-              <a href="#" class="btn btn--teal">Select Plan</a>
-            </div>
-          </div>
-
-          <!-- Equity -->
-          <div class="pr-row">
-            <div class="pr-row__left">
-              <div class="pr-row__phase">Phase 03: Equity Analysis</div>
-              <p class="body-text" style="font-size: 14px">
-                Intrinsic value evaluation and professional trading tools.
-              </p>
-            </div>
-            <div class="pr-row__right">
-              <div class="pr-price">$250</div>
-              <a href="#" class="btn btn--teal">Select Plan</a>
-            </div>
-          </div>
-
-          <!-- Derivatives -->
-          <div class="pr-row pr-row--alt">
-            <div class="pr-row__left">
-              <div class="pr-row__phase">Phase 04: Derivatives & Greeks</div>
-              <p class="body-text" style="font-size: 14px">
-                Options mathematics, volatility, and profit optimization.
-              </p>
-            </div>
-            <div class="pr-row__right">
-              <div class="pr-price">$500</div>
-              <a href="#" class="btn btn--teal">Select Plan</a>
-            </div>
-          </div>
-
-          <!-- LMRSS -->
-          <div class="pr-row pr-row--premium">
-            <div class="pr-premium-badge">Flagship System</div>
-            <div class="pr-row__left">
-              <div class="pr-row__phase">Phase 05: Day Trading LMRSS</div>
-              <p
-                class="body-text"
-                style="font-size: 14px; color: rgba(255, 255, 255, 0.7)"
+        <div class="problem-grid">
+          <!-- Card 1 -->
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
               >
-                High-probability intraday execution system and mentorship.
+                <path
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                ></path>
+              </svg>
+            </div>
+            <h3>No Repeatable System</h3>
+            <p>
+              Most traders hop between indicators and strategies, never
+              mastering a single process. They lack the "Playbook" required for
+              consistent, professional-grade results.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3>Emotional Decision Making</h3>
+            <p>
+              Retail decisions are frequently driven by FOMO or panic.
+              Institutional success requires removing the "human element"
+              through rule-based execution and data.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3>Fragile Risk Management</h3>
+            <p>
+              Without a capital protection framework, one outlier event can
+              liquidate months of progress. We teach you how to engineer trades
+              where the downside is always defined.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOLUTION SECTION -->
+    <section class="section section--solution" id="solution">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 60px">
+          <span
+            class="problem-label"
+            style="background: var(--teal); color: var(--white)"
+            >The OHC Operating System</span
+          >
+          <h2 style="color: var(--white)">
+            A systematic path to financial autonomy
+          </h2>
+          <p style="color: rgba(255, 255, 255, 0.7)">
+            We move you through a four-stage evolution designed to replace
+            market guesswork with institutional-grade execution.
+          </p>
+        </div>
+
+        <div class="solution-grid">
+          <!-- Step 1 -->
+          <div class="dark-glass-card">
+            <div class="step-header">
+              <span class="step-number">Step 01</span>
+              <div class="step-dot"></div>
+            </div>
+            <h3>Learn</h3>
+            <p>
+              Master the mechanics of global markets, asset classes, and the
+              macro drivers that move price.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="dark-glass-card">
+            <div class="step-header">
+              <span class="step-number">Step 02</span>
+              <div class="step-dot"></div>
+            </div>
+            <h3>Earn</h3>
+            <p>
+              Adopt a high-probability intraday system to generate active,
+              consistent capital from the markets.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="dark-glass-card">
+            <div class="step-header">
+              <span class="step-number">Step 03</span>
+              <div class="step-dot"></div>
+            </div>
+            <h3>Protect</h3>
+            <p>
+              Implement professional hedging and preservation strategies to
+              secure your hard-earned capital.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="dark-glass-card">
+            <div class="step-header">
+              <span class="step-number">Step 04</span>
+              <div class="step-dot"></div>
+            </div>
+            <h3>Grow</h3>
+            <p>
+              Scale your success into a long-term, structured wealth system for
+              true generational autonomy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PATHS SECTION -->
+    <section class="section section--paths" id="paths">
+      <div class="container">
+        <div style="text-align: center; max-width: 850px; margin: 0 auto 60px">
+          <span class="problem-label">Decision Guidance</span>
+          <h2>Select Your <span class="teal-text">Trajectory</span></h2>
+          <p>
+            Choose the framework that aligns with your current capital
+            requirements and long-term financial objectives.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <!-- Trader Path (Teal Border) -->
+          <div class="path-card-large path-card-large--featured">
+            <div class="path-card-header">
+              <h3>The Trader Trajectory</h3>
+              <p>
+                Engineered for active capital creation. Adopt a high-probability
+                system designed for precision intraday execution.
               </p>
             </div>
-            <div class="pr-row__right">
-              <div class="pr-price pr-price--light">$1,000</div>
-              <a href="#" class="btn btn--white">Select Plan</a>
+            <div class="path-card-body">
+              <ul class="path-list">
+                <li>Financial Markets Basics</li>
+                <li>Equity Analysis & Investments</li>
+                <li>LMRSS Day Trading System</li>
+              </ul>
+              <a
+                href="#"
+                class="btn btn--teal"
+                style="width: 100%; justify-content: center"
+                >Begin Evolution</a
+              >
+            </div>
+          </div>
+
+          <!-- Wealth Builder Path (Navy Border) -->
+          <div class="path-card-large path-card-large--navy">
+            <div class="path-card-header">
+              <h3>The Wealth Trajectory</h3>
+              <p>
+                Engineered for long-term preservation. Build an
+                institutional-grade portfolio that compounds across market
+                cycles.
+              </p>
+            </div>
+            <div class="path-card-body">
+              <ul class="path-list">
+                <li>Financial Markets Basics</li>
+                <li>Equity & Fixed Income Analysis</li>
+                <li>Advanced Derivatives & Greeks</li>
+              </ul>
+              <a href="#" class="btn btn--outline">Build Your System</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIAL -->
-    <section class="testi-section">
-      <div class="testi-section__photo">
-        <img src="testi.png" alt="OHC student testimonial" />
-      </div>
-      <div class="testi-section__content">
-        <div class="section-label" style="color: #2394a0">
-          Real Feedbacks From Our Clients.
-        </div>
-        <h2 class="testi-heading">What Our <em>Students Say.</em></h2>
-        <div class="testi-slider" id="testiSlider">
-          <div class="testi-slide active">
-            <blockquote>
-              "Taking the moment to express my deepest gratitude — working with
-              Gab has been a transformative experience. His expertise were so
-              evident, transforming my understanding of the financial market.
-              His unwavering support has not only helped me gain confidence but
-              also achieve consistent profits. I highly recommend this program
-              for anyone looking to build skills that will last a lifetime."
-            </blockquote>
-            <div class="testi-stars">★ ★ ★ ★ ★</div>
-            <div class="testi-author">Precious</div>
+    <!-- 5. OHC ECOSYSTEM SECTION -->
+    <section class="section section--ecosystem" id="ecosystem">
+      <div class="container">
+        <div class="ecosystem-header">
+          <div class="header-text">
+            <span
+              class="problem-label"
+              style="background: var(--navy); color: var(--white)"
+              >The Ecosystem</span
+            >
+            <h2>A Complete Financial System</h2>
           </div>
-          <div class="testi-slide">
-            <blockquote>
-              "Not a signals group. Not a get-rich scheme. OHC is institutional
-              education built for serious professionals. The LMRSS system
-              transformed how I read price action. I went from inconsistent to
-              profitable within 60 days of applying the framework."
-            </blockquote>
-            <div class="testi-stars">★ ★ ★ ★ ★</div>
-            <div class="testi-author">Kwame M. — Equity Trader, Accra</div>
-          </div>
-          <div class="testi-slide">
-            <blockquote>
-              "The derivatives module alone was worth $10,000. I now hedge my
-              equity book with confidence. Gabriel's teaching clarity is
-              unmatched — this is truly institutional-grade content made
-              accessible."
-            </blockquote>
-            <div class="testi-stars">★ ★ ★ ★ ★</div>
-            <div class="testi-author">David K. — Fund Analyst, Nairobi</div>
+          <div class="swiper-nav-wrapper">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
-        <div class="testi-dots" id="testiDots">
-          <button class="tdot tdot--on" data-i="0"></button>
-          <button class="tdot" data-i="1"></button>
-          <button class="tdot" data-i="2"></button>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1: Basics -->
+            <div class="swiper-slide">
+              <div class="course-card-expanded">
+                <span class="course-category">Foundations</span>
+                <h3>Financial Markets Basics</h3>
+                <p class="course-intro-text">
+                  This program breaks down the core structure of modern
+                  financial markets, including equities, fixed income,
+                  commodities, and foreign exchange. Through engaging modules,
+                  you’ll learn how markets are formed, what drives price
+                  movements, and how key economic indicators influence trends.
+                </p>
+                <span class="completion-label"
+                  >On completion of this programme, you will gain knowledge
+                  of:</span
+                >
+                <ul class="curriculum-list">
+                  <li>
+                    The universe of financial securities and the standard
+                    investment process.
+                  </li>
+                  <li>Basics of how financial instruments are valued.</li>
+                </ul>
+                <div class="course-footer">
+                  <span class="course-price">Free</span>
+                  <a href="course-basics.html" class="course-link"
+                    >Access Module →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Fixed Income -->
+            <div class="swiper-slide">
+              <div class="course-card-expanded">
+                <span class="course-category">Asset Analysis</span>
+                <h3>Fixed Income Analysis and Investments</h3>
+                <p class="course-intro-text">
+                  This course provides a comprehensive understanding of fixed
+                  income securities, focusing on valuation, yield analysis,
+                  interest rate dynamics, and portfolio construction. It is
+                  ideal for those looking to understand bonds as both investment
+                  and risk management tools.
+                </p>
+                <span class="completion-label"
+                  >On completion of this programme, you will gain knowledge
+                  of:</span
+                >
+                <ul class="curriculum-list">
+                  <li>Bonds and the debt capital markets.</li>
+                  <li>
+                    Bond yields, and how credit and interest rate risks factor
+                    into pricing.
+                  </li>
+                </ul>
+                <div class="course-footer">
+                  <span class="course-price">$250</span>
+                  <a href="course-fixed-income.html" class="course-link"
+                    >Explore Module →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Equity -->
+            <div class="swiper-slide">
+              <div class="course-card-expanded">
+                <span class="course-category">Asset Analysis</span>
+                <h3>Equity Analysis and Investments</h3>
+                <p class="course-intro-text">
+                  This course equips participants with the tools and frameworks
+                  used by professional investors to evaluate equities. It blends
+                  fundamental analysis with market insights to support informed
+                  equity investment decisions.
+                </p>
+                <span class="completion-label"
+                  >On completion of this programme, you will gain knowledge
+                  of:</span
+                >
+                <ul class="curriculum-list">
+                  <li>A comprehensive introduction to equity investments.</li>
+                  <li>
+                    The ability to evaluate a security's intrinsic value by
+                    examining economic, financial, and other qualitative and
+                    quantitative factors.
+                  </li>
+                  <li>
+                    A thorough exploration of tools and techniques for trading
+                    success.
+                  </li>
+                </ul>
+                <div class="course-footer">
+                  <span class="course-price">$250</span>
+                  <a href="course-equity.html" class="course-link"
+                    >Explore Module →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Derivatives -->
+            <div class="swiper-slide">
+              <div class="course-card-expanded">
+                <span class="course-category">Advanced Strategy</span>
+                <h3>
+                  Derivatives 101: Instruments, Valuation, Greeks, and
+                  Strategies
+                </h3>
+                <span class="completion-label"
+                  >On completion of this course, you will gain:</span
+                >
+                <ul class="curriculum-list">
+                  <li>
+                    A comprehensive exploration of options trading strategies.
+                  </li>
+                  <li>An understanding of the mathematics of options.</li>
+                  <li>
+                    Insights into the impact of volatility on option prices.
+                  </li>
+                  <li>A deep dive into factors influencing option prices.</li>
+                  <li>Strategies to maximise profits with debit options.</li>
+                  <li>Strategies for generating income with credit options.</li>
+                  <li>Advanced option strategies.</li>
+                  <li>
+                    Techniques for optimising and fine-tuning options positions.
+                  </li>
+                </ul>
+                <div class="course-footer">
+                  <span class="course-price">$1,000</span>
+                  <a href="course-derivatives.html" class="course-link"
+                    >Explore Module →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: LMRSS -->
+            <div class="swiper-slide">
+              <div
+                class="course-card-expanded"
+                style="border: 2px solid var(--teal)"
+              >
+                <span class="course-category">The Operating System</span>
+                <h3>Day Trading LMRSS</h3>
+                <span class="completion-label"
+                  >On completion of this course, you will gain:</span
+                >
+                <ul class="curriculum-list">
+                  <li>
+                    A comprehensive exploration of options trading strategies.
+                  </li>
+                  <li>An understanding of the mathematics of options.</li>
+                  <li>
+                    Insights into the impact of volatility on option prices.
+                  </li>
+                  <li>A deep dive into factors influencing option prices.</li>
+                  <li>Strategies to maximise profits with debit options.</li>
+                  <li>Strategies for generating income with credit options.</li>
+                  <li>Advanced option strategies.</li>
+                  <li>
+                    Techniques for optimising and fine-tuning options positions.
+                  </li>
+                </ul>
+                <div class="course-footer">
+                  <span class="course-price">$1,000</span>
+                  <a href="course-lmrss.html" class="course-link"
+                    >Access System →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-band">
-      <div class="cta-band__bg"></div>
-      <div class="container cta-band__inner">
-        <div class="section-label" style="text-align: center">
-          Ready to Begin?
+    <!-- 6. FOUNDER STORY SECTION -->
+    <section class="section section--founder" id="founder">
+      <div class="container founder-wrap">
+        <div class="founder-image-container">
+          <!-- Replace with your actual high-res founder image -->
+          <img src="founder2.png" alt="Gabriel Olumide Odediran" />
         </div>
-        <h2 class="cta-band__title">
-          The Institutional Edge<br /><em>Awaits You.</em>
-        </h2>
-        <div class="cta-band__btns">
-          <a href="#pricing" class="btn btn--teal btn--lg"
-            >Start Free Journey</a
+
+        <div class="founder-card">
+          <span class="course-category">Built in Real Time</span>
+          <h2>The Mindset of a Professional</h2>
+          <p>
+            Success in the markets isn't about the trade—it's about the system.
+            We've built an ecosystem that mirrors the operations of a
+            professional trading desk.
+          </p>
+          <p>
+            My journey started with capital, grew through disciplined trading,
+            and evolved into a structured wealth system. OHC is the distillation
+            of that 18-year evolution, designed to give you the same
+            institutional edge.
+          </p>
+
+          <div class="founder-signature">
+            <span class="founder-name">GABRIEL OLUMIDE ODEDIRAN</span>
+            <span class="founder-title">Founder & Chief Strategist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 3-BUCKET SYSTEM SECTION -->
+    <section class="section section--buckets" id="flagship">
+      <div class="container">
+        <div style="text-align: center; max-width: 850px; margin: 0 auto 60px">
+          <span
+            class="problem-label"
+            style="background: var(--teal); color: var(--white)"
+            >The Flagship Framework</span
           >
-          <a
-            href="mailto:support@ohctraderroom.com"
-            class="btn btn--ghost btn--lg"
-            >Contact Us</a
-          >
+          <h2 style="color: var(--white)">
+            The 3-Bucket Financial Freedom System
+          </h2>
+          <p style="color: rgba(255, 255, 255, 0.7)">
+            Our proprietary architecture for long-term autonomy. We don't just
+            teach trading—we build complete financial systems.
+          </p>
+        </div>
+
+        <div class="bucket-grid">
+          <!-- Bucket 1 -->
+          <div class="bucket-card">
+            <span class="bucket-percentage">80%</span>
+            <h3>Passive Growth</h3>
+            <p>
+              The foundation of your wealth. Institutional portfolio structures
+              designed to compound across market cycles with minimal management.
+            </p>
+          </div>
+
+          <!-- Bucket 2 -->
+          <div class="bucket-card" style="border-color: var(--teal)">
+            <span class="bucket-percentage">15%</span>
+            <h3>Structured Income</h3>
+            <p>
+              Utilizing advanced derivatives and fixed income strategies to
+              generate consistent, predictable cash flow from your assets.
+            </p>
+          </div>
+
+          <!-- Bucket 3 -->
+          <div class="bucket-card">
+            <span class="bucket-percentage">5%</span>
+            <h3>Active Trading</h3>
+            <p>
+              High-probability intraday execution using the LMRSS system.
+              Aggressive capital creation with strictly defined risk parameters.
+            </p>
+          </div>
+        </div>
+
+        <div class="bucket-footer">
+          <p style="margin-bottom: 40px; color: var(--white)">
+            Includes all courses, portfolio strategy, and direct mentorship.
+          </p>
+          <a href="#" class="btn btn--teal">Build Your Financial System</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FINAL CTA SECTION -->
+    <section
+      class="section"
+      style="
+        text-align: center;
+        background: var(--white);
+        padding: 40px 0 40px 0;
+      "
+    >
+      <div class="container">
+        <div style="max-width: 700px; margin: 0 auto">
+          <h2 style="margin-bottom: 30px">
+            Your Path to Autonomy <span class="teal-text">Starts Here.</span>
+          </h2>
+          <p style="margin-bottom: 50px">
+            Join 14,000+ students who have moved beyond retail speculation to
+            institutional mastery.
+          </p>
+          <a href="#ecosystem" class="btn btn--teal">Access the Foundations</a>
         </div>
       </div>
     </section>
@@ -763,16 +693,21 @@
               <a href="mailto:support@ohctraderroom.com"
                 >support@ohctraderroom.com</a
               >
-              <a href="tel:+6281305558700">(+62)81 305 558 700</a>
+              <a href="tel:+2347047779807">+234 704 777 9807</a>
             </div>
           </div>
           <div class="footer__links">
             <div class="footer__col">
               <div class="footer__col-ttl">Programs</div>
-              <a href="#">Markets Basics (Free)</a>
-              <a href="#">Fixed Income — $250</a>
-              <a href="#">Equity Analysis — $250</a>
-              <a href="#">Advanced Derivatives — $1,000</a>
+              <a href="course-basics.html">Markets Basics (Free)</a>
+              <a href="course-equity.html">Equity Analysis — $250</a>
+              <a href="course-fixed-income.html">Fixed Income — $250</a>
+              <a href="course-lmrss-day-trading.html"
+                >LMRSS Day Trading — $1,000</a
+              >
+              <a href="course-advanced-derivatives.html"
+                >Derivatives — $1,000</a
+              >
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Company</div>
@@ -801,79 +736,74 @@
       </div>
     </footer>
 
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeVideo">&times; Close</span>
+        <video id="fullVideo" controls>
+          <source src="videos/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
     <script>
-      // Nav scroll + logo swap
-      const nav = document.getElementById("nav");
-      window.addEventListener("scroll", () => {
-        const scrolled = window.scrollY > 60;
-        nav.classList.toggle("nav--scrolled", scrolled);
+      const openBtn = document.getElementById("openVideo");
+      const closeBtn = document.getElementById("closeVideo");
+      const modal = document.getElementById("videoModal");
+      const fullVideo = document.getElementById("fullVideo");
+
+      // Open Modal
+      openBtn.addEventListener("click", () => {
+        modal.style.display = "flex";
+        fullVideo.play();
       });
 
-      // Hamburger menu toggle
-      const hamburger = document.getElementById("hamburger");
-      const mobileNav = document.getElementById("mobileNav");
-      const mobileNavClose = document.getElementById("mobileNavClose");
+      // Close Modal
+      const closeModal = () => {
+        modal.style.display = "none";
+        fullVideo.pause();
+        fullVideo.currentTime = 0;
+      };
 
-      function closeMenu() {
-        hamburger.classList.remove("hamburger--open");
-        mobileNav.classList.remove("mobile-nav--open");
-        document.body.classList.remove("menu-open");
-      }
+      closeBtn.addEventListener("click", closeModal);
 
-      hamburger.addEventListener("click", () => {
-        const isOpen = hamburger.classList.toggle("hamburger--open");
-        mobileNav.classList.toggle("mobile-nav--open", isOpen);
-        document.body.classList.toggle("menu-open", isOpen);
+      // Close on clicking outside the video
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
       });
-      mobileNavClose.addEventListener("click", closeMenu);
-      // Close menu when clicking a link
-      mobileNav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", closeMenu);
-      });
+    </script>
 
-      // Testimonial slider
-      const slides = document.querySelectorAll(".testi-slide");
-      const dots = document.querySelectorAll(".tdot");
-      let cur = 0,
-        timer;
-      function goTo(i) {
-        slides[cur].classList.remove("active");
-        dots[cur].classList.remove("tdot--on");
-        cur = i;
-        slides[cur].classList.add("active");
-        dots[cur].classList.add("tdot--on");
-      }
-      function nextSlide() {
-        goTo((cur + 1) % slides.length);
-      }
-      dots.forEach((d) =>
-        d.addEventListener("click", () => {
-          clearInterval(timer);
-          goTo(+d.dataset.i);
-          timer = setInterval(nextSlide, 6000);
-        }),
-      );
-      timer = setInterval(nextSlide, 6000);
-
-      // Scroll reveal
-      const revealEls = document.querySelectorAll(
-        ".dom-card, .course-item, .pr-row, .stat, .about__content, .about__visuals",
-      );
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("revealed");
-              obs.unobserve(e.target);
-            }
-          });
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 40, // Increased spacing for a more spacious feel
+        loop: true,
+        autoplay: false,
+        grabCursor: true,
+        mousewheel: {
+          forceToAxis: true,
         },
-        { threshold: 0.1 },
-      );
-      revealEls.forEach((el, i) => {
-        el.classList.add("reveal-ready");
-        el.style.transitionDelay = `${(i % 3) * 90}ms`;
-        obs.observe(el);
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // On tablets, show 1 full card and a peek of the next
+          768: {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+          },
+          // On desktop, show exactly 2 wide cards
+          1100: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        },
       });
     </script>
   </body>

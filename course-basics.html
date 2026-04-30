@@ -2,395 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Financial Markets Basics — OHC Trade Room</title>
+    <title>Financial Markets Basics — OHC</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="course-page.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500;600;700&family=DM+Mono:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Nav (Simplified for Course Pages) -->
-    <nav class="nav nav--course">
-      <div class="nav__inner">
-        <a href="index.html" class="nav__logo">
-          <img
-            src="logo-dark.png"
-            alt="OHC Trade Room"
-            style="height: 36px; filter: none"
-          />
-        </a>
-        <a href="index.html" class="btn btn--outline">← Back to Home</a>
+    <nav class="nav">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo"
+          ><img src="logo-dark.png" alt="OHC" style="height: 55px" /></a
+        ><a href="index.html#ecosystem" class="btn btn--outline"
+          >← Back to Home</a
+        >
       </div>
     </nav>
 
-    <main>
-      <!-- HERO SECTION -->
-      <section class="course-hero">
-        <div class="container course-hero__grid">
-          <!-- LEFT SIDE: Content -->
-          <div class="course-hero__content">
-            <div class="section-label">Phase 01 — Foundation</div>
-            <h1 class="course-hero__title">
-              Financial Markets <br /><em>Basics</em>
-            </h1>
-            <p class="course-hero__slogan">
-              Markets. Instruments. Valuation. The language every investor must
-              speak.
-            </p>
-
-            <div class="course-hero__philosophy">
-              <p>
-                Most people try to invest without first understanding how
-                financial markets actually work. Without the foundation, you are
-                guessing — not investing.
-              </p>
-              <p>
-                This course changes that. We move beyond surface-level tips to
-                help you understand exactly how markets are structured, how
-                instruments are priced, and how experienced investors think
-                before they act.
-              </p>
-            </div>
-
-            <div class="course-hero__actions">
-              <a href="#pricing" class="btn btn--teal btn--lg"
-                >Start Learning Today</a
-              >
-              <span class="scroll-note"
-                >Stop guessing. Start understanding. ↓</span
-              >
-            </div>
-          </div>
-
-          <!-- RIGHT SIDE: Interactive Video -->
-          <div class="course-hero__visual">
-            <div class="video-frame">
-              <!-- Browser dots are now "ghost" elements that don't block clicks -->
-              <div class="video-frame__browser-dots">
-                <span></span><span></span><span></span>
-              </div>
-
-              <!-- Video acts as its own placeholder. 
-             Added 'playsinline' for better mobile support. -->
-              <video
-                controls
-                playsinline
-                class="video-frame__video"
-                id="courseMainVideo"
-              >
-                <source src="videos/Basics.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-
-              <div class="video-frame__caption">
-                <div class="pulse-icon"></div>
-                The Language of Financial Markets
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- THE STRUGGLE -->
-      <section class="section struggle">
-        <div class="container">
-          <div class="struggle__grid">
-            <div class="struggle__content">
-              <div class="section-label">The Beginner's Trap</div>
-              <h2 class="section-title">
-                Why Most Beginners <em>Fail at Investing</em>
-              </h2>
-              <p class="body-text">
-                Most retail investors approach the market without the basic
-                vocabulary or framework needed to succeed. They fail because
-                they:
-              </p>
-              <ul class="struggle__list">
-                <li>
-                  Jump into strategies without understanding the instruments
-                </li>
-                <li>Ignore how pricing and valuation actually work</li>
-                <li>Mistake market noise for informed signal</li>
-                <li>Use tips and trends instead of a repeatable process</li>
-                <li>Confuse activity with edge</li>
-              </ul>
-            </div>
-            <div class="struggle__image">
-              <img
-                src="basics.webp"
-                alt="Market Analysis"
-                class="rounded-img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHAT YOU WILL LEARN (OUTCOMES) -->
-      <section class="section outcomes bg-navy">
-        <div class="container">
-          <div class="outcomes__header">
-            <h2 class="section-title text-white">
-              The <em>Transformation</em>
-            </h2>
-            <p class="text-muted">
-              Moving from confusion and guesswork to structured market
-              intelligence.
-            </p>
-          </div>
-          <div class="outcomes__grid">
-            <div class="outcome-card">
-              <span class="outcome-num">01</span>
-              <p>A clear understanding of how financial markets work</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">02</span>
-              <p>
-                Knowledge of stocks, bonds, and the standard investment process
-              </p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">03</span>
-              <p>Foundational valuation principles used by professionals</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">04</span>
-              <p>The confidence and language to move into deeper strategy</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CURRICULUM -->
-      <section class="section curriculum">
-        <div class="container">
-          <div class="section-label">Curriculum</div>
-          <h2 class="section-title">Basics <em>Masterclass</em></h2>
-
-          <div class="module-stack">
-            <div class="module">
-              <div class="module__header">
-                <span>Module 01</span>
-                <h3>How Investors Approach the Market</h3>
-              </div>
-              <div class="module__body">
-                <ul>
-                  <li>How experienced investors think before they invest</li>
-                  <li>Simple steps used to evaluate an investment</li>
-                  <li>The relationship between risk and potential reward</li>
-                  <li>Difference between guessing and informed decisions</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="module">
-              <div class="module__header">
-                <span>Module 02</span>
-                <h3>Understanding Main Types of Investments</h3>
-              </div>
-              <div class="module__body">
-                <ul>
-                  <li>What stocks are and how they work</li>
-                  <li>What bonds are and why they exist</li>
-                  <li>
-                    Main types of investments available in financial markets
-                  </li>
-                  <li>
-                    How these investments fit into the global financial system
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="module">
-              <div class="module__header">
-                <span>Module 03</span>
-                <h3>The Basic Idea Behind How Investments Are Priced</h3>
-              </div>
-              <div class="module__body">
-                <ul>
-                  <li>Why different investments have different prices</li>
-                  <li>How investors think about what something is worth</li>
-                  <li>Why time affects the value of money</li>
-                  <li>Simple ideas behind how financial assets are valued</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING PLANS -->
-      <section class="section bg-off-white" id="pricing">
-        <div class="container">
-          <div class="section-label text-center">Get Started Today</div>
-          <h2 class="section-title text-center">Master the <em>Basics</em></h2>
-
-          <div
-            class="pricing__stack"
-            style="max-width: 900px; margin: 40px auto 0"
-          >
-            <div class="pr-row">
-              <div class="pr-row__left">
-                <div class="pr-row__phase">Free Access</div>
-                <p class="body-text">
-                  Full access to Phase 01 — no payment required.
-                </p>
-              </div>
-              <div class="pr-row__right">
-                <div class="pr-price">$0</div>
-                <p style="font-size: 11px; color: var(--text-muted)">
-                  Lifetime free access
-                </p>
-                <a href="#" class="btn btn--teal">Enroll Now</a>
-              </div>
-            </div>
-            <!-- <div class="pr-row pr-row--premium">
-              <div class="pr-premium-badge">Most Popular</div>
-              <div class="pr-row__left">
-                <div class="pr-row__phase">Full Programme Bundle</div>
-                <p class="body-text" style="color: rgba(255, 255, 255, 0.7)">
-                  Basics + all advanced phases. One payment, lifetime access.
-                </p>
-              </div>
-              <div class="pr-row__right">
-                <div class="pr-price pr-price--light">$1,500</div>
-                <p style="font-size: 11px; color: rgba(255, 255, 255, 0.4)">
-                  Save $250 on the full bundle
-                </p>
-                <a href="#" class="btn btn--white">Register Now</a>
-              </div>
-            </div> -->
-          </div>
-          <p
-            class="text-center"
-            style="margin-top: 30px; font-size: 14px; color: var(--text-muted)"
-          >
-            <strong>14-DAY MONEY-BACK GUARANTEE:</strong> We stand by our
-            institutional grade content. If you aren't satisfied, we refund you,
-            no questions asked.
+    <section class="course-hero">
+      <div class="container course-hero__grid">
+        <div class="course-hero__content">
+          <span class="course-hero__slogan">Foundation</span>
+          <h1 class="course-hero__title">
+            Financial Markets <span class="teal-text">Basics</span>
+          </h1>
+          <p>
+            Markets. Instruments. Valuation. The language every investor must
+            speak.
           </p>
+          <a href="#pricing" class="btn btn--teal">Access Foundations</a>
         </div>
-      </section>
-
-      <!-- INSTRUCTOR -->
-      <section class="section instructor bg-off-white">
-        <div class="container">
-          <div class="instructor__grid">
-            <div class="instructor__img">
-              <img src="founder2.png" alt="Gabriel Olumide Odediran" />
-            </div>
-            <div class="instructor__content">
-              <div class="section-label">Your Lead Strategist</div>
-              <h2 class="section-title">Gabriel Olumide <em>Odediran</em></h2>
-              <p class="body-text">
-                Multi-asset specialist with 18 years professional experience
-                encompassing Fixed Income (Credit & Rates), Equity and
-                Derivative markets. Gabriel provides a solid understanding of
-                global markets backed by a robust analytical and quantitative
-                background.
-              </p>
-              <div class="expertise-tags">
-                <span>Portfolio Management</span>
-                <span>Asset Liability Management</span>
-                <span>Fundamental Analysis</span>
-                <span>Technical Analysis</span>
-                <span>Risk Management</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section faq">
-        <div class="container">
-          <h2 class="section-title text-center">
-            Frequently Asked <em>Questions</em>
-          </h2>
-          <div class="faq__list">
-            <div class="faq__item">
-              <h4>Are my results guaranteed?</h4>
-              <p>
-                Like anything in life, you will get out of this bootcamp what
-                you put into it. While we offer a 14-day money-back guarantee,
-                the results are up to you. If you commit to the process, you
-                will see results.
-              </p>
-            </div>
-            <div class="faq__item">
-              <h4>Can I share course info with a friend?</h4>
-              <p>
-                We encourage referring friends who are ready to commit to the
-                physical and fiscal discipline required to become an elite
-                trader.
-              </p>
-            </div>
-            <div class="faq__item">
-              <h4>Do you have incentives for referrals?</h4>
-              <p>
-                Yes! You will receive a $20 credit good for any of our online
-                courses for each friend you send our way.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <div class="footer__brand">
-            <div class="footer__logo">OHC <span>Trade Room</span></div>
-            <p>
-              Institutional intelligence.<br />Systematic execution.<br />Generational
-              wealth.
-            </p>
-            <div class="footer__contacts">
-              <a href="mailto:support@ohctraderroom.com"
-                >support@ohctraderroom.com</a
-              >
-              <a href="tel:+6281305558700">(+62)81 305 558 700</a>
-            </div>
-          </div>
-          <div class="footer__links">
-            <div class="footer__col">
-              <div class="footer__col-ttl">Programs</div>
-              <a href="#">Markets Basics (Free)</a>
-              <a href="#">Fixed Income — $250</a>
-              <a href="#">Equity Analysis — $250</a>
-              <a href="#">Advanced Derivatives — $1,000</a>
-            </div>
-            <div class="footer__col">
-              <div class="footer__col-ttl">Company</div>
-              <a href="#">About OHC</a>
-              <a href="#">Our Philosophy</a>
-              <a href="#">The LMRSS System</a>
-              <a href="#">Contact</a>
-            </div>
-            <div class="footer__col">
-              <div class="footer__col-ttl">Legal</div>
-              <a href="#">Terms of Service</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Risk Disclaimer</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="footer__copy">
-            © 2026 OHC EXECUTION. ALL RIGHTS RESERVED.
-          </div>
-          <div class="footer__disc">
-            Trading involves substantial risk of loss. Past performance is not
-            indicative of future results.
+        <div class="course-hero__visual">
+          <div class="video-frame">
+            <video controls playsinline class="video-frame__video">
+              <source src="videos/Basics.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="section struggle">
+      <div class="container struggle__grid">
+        <div class="struggle__content">
+          <span
+            class="problem-label"
+            style="background: var(--navy); color: white"
+            >The Beginner's Trap</span
+          >
+          <h2>Why Most Beginners Fail</h2>
+          <ul class="struggle__list">
+            <li>Jump into strategies without understanding the instruments</li>
+            <li>Ignore how pricing and valuation actually work</li>
+            <li>Mistake market noise for informed signal</li>
+          </ul>
+        </div>
+        <div class="struggle__image">
+          <img src="basics.webp" style="border-radius: 24px; width: 100%" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section outcomes">
+      <div class="container">
+        <h2 style="color: white; text-align: center; margin-bottom: 60px">
+          The Transformation
+        </h2>
+        <div class="outcomes__grid">
+          <div class="outcome-card">
+            <span class="outcome-num">01</span>
+            <p style="color: white">
+              Clear understanding of global market mechanics
+            </p>
+          </div>
+          <div class="outcome-card">
+            <span class="outcome-num">02</span>
+            <p style="color: white">
+              Knowledge of the standard investment process
+            </p>
+          </div>
+          <div class="outcome-card">
+            <span class="outcome-num">03</span>
+            <p style="color: white">Foundational valuation principles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-off-white" id="pricing">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px">
+          Master the Basics
+        </h2>
+        <div class="pricing-box">
+          <div class="pr-row">
+            <div>
+              <h3>Complimentary Access</h3>
+              <p>Full access to Phase 01</p>
+            </div>
+            <div class="pr-price">$0</div>
+            <a href="#" class="btn btn--teal">Enroll Now</a>
+          </div>
+        </div>
+        <p class="guarantee-note">
+          <strong>14-DAY MONEY-BACK GUARANTEE:</strong> If you aren't completely
+          satisfied, let us know within the first 14-days for a full refund.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container instructor-wrap">
+        <div class="instructor-image">
+          <img src="founder2.png" style="width: 100%" />
+        </div>
+        <div class="instructor-content">
+          <span class="problem-label">Lead Strategist</span>
+          <h2>Gabriel Olumide Odediran</h2>
+          <p>
+            Multi-asset specialist with 18 years professional experience
+            encompassing Fixed Income, Equity and Derivative markets.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

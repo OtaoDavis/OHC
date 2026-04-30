@@ -1,0 +1,131 @@
+section {
+  padding: 20px 0;
+}
+/* ─── ABOUT HERO LAYERED COMPOSITION ────────────────────── */
+.about-hero__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-visuals {
+  position: relative;
+  height: 620px;
+}
+
+.about-img-main {
+  width: 80%;
+  height: 85%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-img-sub {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 55%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 10px solid var(--white); /* Thick white border from image */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.about-img-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-rating-card {
+  position: absolute;
+  bottom: 120px;
+  left: -40px;
+  background: var(--navy);
+  color: var(--white);
+  padding: 40px;
+  border-radius: var(--radius);
+  max-width: 300px;
+  z-index: 3;
+  box-shadow: 0 20px 50px rgba(8, 2, 57, 0.3);
+}
+
+.about-rating-card .stars {
+  color: #fbbf24;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.rating-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--teal);
+  margin-bottom: 15px;
+}
+.about-rating-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* ─── PILLARS GRID ──────────────────────────────────────── */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.pillar-card {
+  background: var(--off-white);
+  padding: 40px 20px;
+  border-radius: var(--radius);
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.pillar-card:hover {
+  background: var(--white);
+  border-color: var(--teal);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.pillar-card h3 {
+  color: var(--teal);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.pillar-card h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .about-hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .about-visuals {
+    height: 550px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
