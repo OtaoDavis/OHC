@@ -324,7 +324,7 @@ section {
     opacity: 0;
     transform: scale(1.15); /* Subtle zoom-in throughout the whole 12s */
   }
-
+}
 /* ─── VIDEO MODAL (FIX 2) ────────────────────────────────── */
 .video-modal {
   position: fixed;
