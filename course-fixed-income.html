@@ -2,139 +2,485 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Fixed Income Analysis — OHC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Income Analysis & Investments — OHC Trade Room</title>
+    <!-- Montserrat Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="course-page.css" />
+    <style>
+      /* Page Specific Overrides */
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .course-hero__title span {
+        display: block;
+        color: var(--teal);
+      }
+    </style>
   </head>
   <body>
-    <nav class="nav">
-      <div class="container nav__inner">
-        <a href="index.html" class="nav__logo"
-          ><img src="logo-dark.png" alt="OHC" style="height: 55px" /></a
-        ><a href="index.html#ecosystem" class="btn btn--outline"
-          >← Back to Home</a
-        >
+    <!-- Nav -->
+    <nav class="nav nav--course">
+      <div class="container">
+        <div class="nav__inner">
+          <a href="index.html" class="nav__logo">
+            <img
+              src="logo-dark.png"
+              alt="OHC Trade Room"
+              style="height: 45px"
+            />
+          </a>
+          <a
+            href="index.html#ecosystem"
+            class="btn btn--outline"
+            style="
+              border: 1px solid var(--navy);
+              padding: 10px 24px;
+              font-weight: 600;
+            "
+            >← Back to Home</a
+          >
+        </div>
       </div>
     </nav>
 
-    <section class="course-hero">
-      <div class="container course-hero__grid">
-        <div class="course-hero__content">
-          <span class="course-hero__slogan"> Debt Markets</span>
-          <h1 class="course-hero__title">
-            Fixed Income <span class="teal-text">Analysis</span>
-          </h1>
-          <p>Master Bonds, Yield Curves & Credit Risk Like a Professional.</p>
-          <a href="#pricing" class="btn btn--teal">Enrol Module</a>
-        </div>
-        <div class="course-hero__visual">
-          <div class="video-frame">
-            <video controls playsinline class="video-frame__video">
-              <source src="videos/Fixed Income Analysis.mp4" type="video/mp4" />
-            </video>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="course-hero">
+        <div class="container course-hero__grid">
+          <div class="course-hero__content">
+            <div class="section-label">Debt Markets</div>
+            <h1 class="course-hero__title">
+              Fixed Income <span>Analysis & Investments</span>
+            </h1>
+            <p class="course-hero__slogan">
+              Master Bonds, Yield Curves & Credit Risk Like a Professional.
+            </p>
+
+            <div class="course-hero__philosophy">
+              <p>
+                If you don’t understand bonds, you’re missing half the financial
+                system.
+              </p>
+              <p>
+                Institutional portfolios are heavily driven by fixed income
+                strategy. This course moves you into the architecture of debt
+                capital markets, yield dynamics, and credit risk.
+              </p>
+            </div>
+
+            <div class="course-hero__actions">
+              <a href="#pricing" class="btn btn--teal btn--lg">Sign Up Here</a>
+              <span class="scroll-note">This is where depth begins ↓</span>
+            </div>
+          </div>
+
+          <div class="course-hero__visual">
+            <div class="video-frame">
+              <video controls playsinline class="video-frame__video">
+                <source
+                  src="videos/Fixed Income Analysis.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="video-frame__caption">
+                <div class="pulse-icon"></div>
+                Fixed Income Architecture Overview
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section struggle">
-      <div class="container struggle__grid">
-        <div class="struggle__content">
-          <span
-            class="problem-label"
-            style="background: var(--navy); color: white"
-            >The Core Gap</span
-          >
-          <h2>Why Fixed Income Matters</h2>
-          <ul class="struggle__list">
-            <li>How bond markets actually function</li>
-            <li>How interest rates influence pricing inversely</li>
-            <li>How yield curves signal economic shifts</li>
-          </ul>
-        </div>
-        <div class="struggle__image">
-          <img
-            src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=80"
-            style="border-radius: 24px; width: 100%"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="section outcomes">
-      <div class="container">
-        <h2 style="color: white; text-align: center; margin-bottom: 60px">
-          What You Will Master
-        </h2>
-        <div class="outcomes__grid">
-          <div class="outcome-card">
-            <span class="outcome-num">01</span>
-            <p style="color: white">Comprehensive Intro to Fixed Income</p>
+      <!-- WHY IT MATTERS (SECTION-CHALLENGE) -->
+      <section
+        class="section section-challenge bg-off-white"
+        style="padding: 100px 0"
+      >
+        <div class="container">
+          <div class="struggle__grid">
+            <div class="struggle__content">
+              <div class="section-label">The Core Gap</div>
+              <h2
+                class="section-title"
+                style="font-weight: 800; font-size: 36px; margin-bottom: 20px"
+              >
+                Why Fixed Income Matters
+              </h2>
+              <p
+                class="body-text"
+                style="font-size: 18px; color: var(--navy-light)"
+              >
+                Most investors focus only on stocks. Few understand the "Hidden
+                Engine" of the global economy:
+              </p>
+              <ul class="struggle__list">
+                <li>How bond markets actually function</li>
+                <li>How interest rates influence pricing inversely</li>
+                <li>How credit risk reshapes your total returns</li>
+                <li>How yield curves signal massive economic shifts</li>
+              </ul>
+            </div>
+            <div class="struggle__image">
+              <img
+                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=80"
+                alt="Yield Curve Analysis"
+                class="rounded-img"
+                style="width: 100%; border-radius: 24px"
+              />
+            </div>
           </div>
-          <div class="outcome-card">
-            <span class="outcome-num">02</span>
-            <p style="color: white">
-              Evaluate Intrinsic Value via Credit & Rates
+        </div>
+      </section>
+
+      <!-- WHAT YOU WILL MASTER -->
+      <section class="section outcomes bg-navy">
+        <div class="container">
+          <div class="outcomes__header">
+            <h2 class="section-title text-white" style="font-weight: 800">
+              What You Will Master
+            </h2>
+            <p style="color: rgba(255, 255, 255, 0.6); margin-top: 15px">
+              You will walk away with institutional-grade understanding of the
+              global debt architecture.
             </p>
           </div>
-          <div class="outcome-card">
-            <span class="outcome-num">03</span>
-            <p style="color: white">Institutional Tools & Techniques</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-off-white" id="pricing">
-      <div class="container">
-        <h2 style="text-align: center; margin-bottom: 50px">
-          Investment Plans
-        </h2>
-        <div class="pricing-box">
-          <div class="pr-row">
-            <div>
-              <h3>Payment Plan</h3>
-              <p>6 monthly payments</p>
+          <div class="outcomes__grid">
+            <div class="outcome-card">
+              <span class="outcome-num">01</span>
+              <p>Comprehensive Introduction to Fixed Income Instruments</p>
             </div>
-            <div class="pr-price">$49/mo</div>
-            <a href="#" class="btn btn--teal">Register Now</a>
-          </div>
-          <div class="pr-row pr-row--premium">
-            <div>
-              <h3>Pay In Full</h3>
-              <p>Lifetime access</p>
+            <div class="outcome-card">
+              <span class="outcome-num">02</span>
+              <p>Evaluate a security's intrinsic value via Credit & Rates</p>
             </div>
-            <div class="pr-price" style="color: white">$250</div>
-            <a
-              href="#"
-              class="btn btn--teal"
-              style="background: white; color: var(--navy)"
-              >Register Now</a
-            >
+            <div class="outcome-card">
+              <span class="outcome-num">03</span>
+              <p>Exploration of Institutional Tools & Techniques</p>
+            </div>
+            <div class="outcome-card">
+              <span class="outcome-num">04</span>
+              <p>Government vs. Corporate Bond Positioning</p>
+            </div>
           </div>
         </div>
-        <p class="guarantee-note">
-          <strong>14-DAY MONEY-BACK GUARANTEE:</strong> If you aren't completely
-          satisfied, let us know within the first 14-days for a full refund.
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="section">
-      <div class="container instructor-wrap">
-        <div class="instructor-image">
-          <img src="founder2.png" style="width: 100%" />
+      <!-- CURRICULUM -->
+      <section
+        class="section curriculum"
+        id="curriculum"
+        style="padding: 100px 0"
+      >
+        <div class="container">
+          <div class="section-label">Curriculum</div>
+          <h2
+            class="section-title"
+            style="font-weight: 800; margin-bottom: 40px"
+          >
+            Deep Learning Modules
+          </h2>
+
+          <div class="module-stack">
+            <div class="module">
+              <div class="module__header">
+                <h3>Bonds & Debt Capital Markets</h3>
+              </div>
+              <div class="module__body">
+                <ul>
+                  <li>Time value of money in fixed income</li>
+                  <li>Bond pricing mechanics</li>
+                  <li>Institutional market participants</li>
+                  <li>Debt capital market operations</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="module">
+              <div class="module__header">
+                <h3>Pricing & Interest Rate Yield Curves</h3>
+              </div>
+              <div class="module__body">
+                <ul>
+                  <li>Yield calculations & Duration concepts</li>
+                  <li>Convexity basics</li>
+                  <li>Yield curve structure and interpretation</li>
+                  <li>How interest rates drive bond prices</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="module">
+              <div class="module__header">
+                <h3>Credit Analysis & Spread Computation</h3>
+              </div>
+              <div class="module__body">
+                <ul>
+                  <li>Credit risk fundamentals</li>
+                  <li>Default probability concepts</li>
+                  <li>Credit spread measurement</li>
+                  <li>Risk-adjusted return evaluation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="module">
+              <div class="module__header">
+                <h3>Rates & Credit Spread Curve Cycles</h3>
+              </div>
+              <div class="module__body">
+                <ul>
+                  <li>Interest rate cycles</li>
+                  <li>Credit spread widening and tightening</li>
+                  <li>Economic phase impact on bonds</li>
+                  <li>Strategic positioning across cycles</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="instructor-content">
-          <span class="problem-label">Lead Strategist</span>
-          <h2>Gabriel Olumide Odediran</h2>
-          <p>
-            Multi-asset specialist with 18 years professional experience
-            encompassing Fixed Income, Equity and Derivative markets.
-          </p>
+      </section>
+
+      <!-- INSTRUCTOR (SECTION-CHALLENGE) -->
+      <section
+        class="section instructor section-challenge bg-white"
+        style="padding: 100px 0"
+      >
+        <div class="container">
+          <div class="instructor__grid">
+            <div class="instructor__img">
+              <img
+                src="founder2.png"
+                alt="Gabriel Olumide Odediran"
+                style="width: 100%; border-radius: 24px"
+              />
+            </div>
+            <div class="instructor__content">
+              <div class="section-label">Your Lead Strategist</div>
+              <h2
+                class="section-title"
+                style="font-weight: 800; margin-bottom: 20px"
+              >
+                Gabriel Olumide Odediran
+              </h2>
+              <p
+                class="body-text"
+                style="font-size: 18px; color: var(--navy-light)"
+              >
+                Multi-asset specialist with 18 years professional experience
+                encompassing Fixed Income, Equity and Derivative markets.
+                Gabriel provides a solid understanding of global markets backed
+                by a robust analytical and quantitative background.
+              </p>
+              <div class="expertise-tags">
+                <span>Portfolio Management</span>
+                <span>Asset Liability Management</span>
+                <span>Fundamental Analysis</span>
+                <span>Technical Analysis</span>
+                <span>Risk Management</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- PRICING -->
+      <section
+        class="section bg-off-white"
+        id="pricing"
+        style="padding: 100px 0"
+      >
+        <div class="container">
+          <div class="section-label text-center">Get Started Today</div>
+          <h2 class="section-title text-center" style="font-weight: 800">
+            Investment Plans
+          </h2>
+
+          <div
+            class="pricing__stack"
+            style="max-width: 900px; margin: 40px auto 0"
+          >
+            <!-- <div class="pr-row">
+              <div class="pr-row__left">
+                <div class="pr-row__phase">Payment Plan</div>
+                <p class="body-text">
+                  Flexible access to institutional education.
+                </p>
+              </div>
+              <div class="pr-row__right" style="text-align: right">
+                <div class="pr-price">$49<span>/mo</span></div>
+                <p
+                  style="
+                    font-size: 11px;
+                    color: var(--text-muted);
+                    margin-bottom: 15px;
+                  "
+                >
+                  6 monthly payments
+                </p>
+                <a href="#" class="btn btn--teal">Register Now</a>
+              </div>
+            </div> -->
+            <div class="pr-row pr-row--premium">
+              <div class="pr-row__left">
+                <div class="pr-row__phase">Pay In Full</div>
+                <p class="body-text" style="color: rgba(255, 255, 255, 0.7)">
+                  Complete access to all Fixed Income modules immediately.
+                </p>
+              </div>
+              <div class="pr-row__right" style="text-align: right">
+                <div class="pr-price">$250</div>
+                <p
+                  style="
+                    font-size: 11px;
+                    color: rgba(255, 255, 255, 0.4);
+                    margin-bottom: 15px;
+                  "
+                >
+                  One-time payment.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn--white"
+                  style="background: white; color: var(--navy)"
+                  >Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section
+        class="section faq"
+        style="padding: 100px 0; background-color: var(--white)"
+      >
+        <div class="container" style="max-width: 800px">
+          <h2
+            class="section-title text-center"
+            style="font-weight: 800; margin-bottom: 60px"
+          >
+            Frequently Asked Questions
+          </h2>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__trigger">
+                Are my results guaranteed?
+                <svg
+                  class="faq__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Like anything in life, you will get out of this bootcamp what
+                  you put into it. While we do offer a 14-day money-back
+                  guarantee, the results you get are up to you. We can promise
+                  that if you commit to the process and put in the work, you
+                  will see results.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__trigger">
+                Can I share course info with a friend?
+                <svg
+                  class="faq__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq__content">
+                <p>
+                  We encourage referring friends who are ready to commit to the
+                  physical and fiscal discipline required to become an elite
+                  trader. However, access is per-user to ensure personalized
+                  progress tracking.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__trigger">
+                Do you have any incentives if I refer a friend?
+                <svg
+                  class="faq__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Yes! You will receive a $20 credit good for any of our online
+                  courses for each friend you send our way who registers for a
+                  program.
+                </p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__trigger">
+                I loved this course and want more! What else is offered?
+                <svg
+                  class="faq__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </summary>
+              <div class="faq__content">
+                <p>
+                  We’re so glad you loved the Fixed Income module. This is Phase
+                  02. We recommend proceeding to Phase 03 (Equity Analysis) and
+                  Phase 04 (Derivatives) for a complete institutional toolkit
+                  before tackling the LMRSS flagship program.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
@@ -156,20 +502,15 @@
             <div class="footer__col">
               <div class="footer__col-ttl">Programs</div>
               <a href="course-basics.html">Markets Basics (Free)</a>
-              <a href="course-equity.html">Equity Analysis — $250</a>
-              <a href="course-fixed-income.html">Fixed Income — $250</a>
-              <a href="course-lmrss-day-trading.html"
-                >LMRSS Day Trading — $1,000</a
-              >
-              <a href="course-advanced-derivatives.html"
-                >Derivatives — $1,000</a
-              >
+              <a href="course-fixed-income.html">Fixed Income</a>
+              <a href="course-equity.html">Equity Analysis</a>
+              <a href="course-derivatives.html">Advanced Derivatives</a>
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Company</div>
               <a href="#">About OHC</a>
               <a href="#">Our Philosophy</a>
-              <a href="#">The LMRSS System</a>
+              <a href="course-lmrss.html">The LMRSS System</a>
               <a href="#">Contact</a>
             </div>
             <div class="footer__col">

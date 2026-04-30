@@ -2,7 +2,7 @@
    OHC TRADE ROOM — Institutional Design System (Light)
 ═══════════════════════════════════════════════════════════ */
 
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --navy: #273a68;
@@ -14,7 +14,8 @@
   --grey-back: #e7e7e7;
   --border: rgba(39, 58, 104, 0.08);
   --radius: 24px;
-  --font-main: "Plus Jakarta Sans", sans-serif;
+  --font-main: "Montserrat", sans-serif;
+  --font-display: "Montserrat", sans-serif;
   --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -25,6 +26,18 @@
   margin: 0;
   padding: 0;
   font-style: normal !important;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.nav__links a {
+  font-family: var(--font-main) !important;
 }
 
 html {
@@ -68,9 +81,9 @@ a {
   align-items: center;
   gap: 7px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   transition: color 0.25s;
 }
 .topbar__link:hover {
@@ -79,7 +92,7 @@ a {
 
 /* ─── NAVIGATION ────────────────────────────────────────── */
 .nav {
-  padding: 20px 0;
+  padding: 15px 0;
   background: var(--white);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -92,7 +105,7 @@ a {
   align-items: center;
 }
 .nav__logo img {
-  height: 55px;
+  height: 65px;
   width: auto;
 }
 .nav__links {
@@ -104,7 +117,7 @@ a {
   text-decoration: none;
   color: var(--navy);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   transition: var(--transition);
 }
 .nav__links a:hover {
@@ -140,25 +153,31 @@ a {
   box-shadow: 0 15px 30px rgba(35, 148, 160, 0.3);
 }
 
+.nav .btn--teal {
+  padding: 14px 44px; /* Wider button */
+  font-size: 16px; /* Larger font */
+}
+section {
+  padding: 100px 0;
+}
 /* ─── HERO SECTION ───────────────────────────────────────── */
 .hero {
-  padding: 40px 0;
   text-align: center;
+  padding: 60px 0;
 }
 .hero__header {
   max-width: 900px;
   margin: 0 auto 60px;
 }
 .hero__header h1 {
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(44px, 6vw, 72px);
   font-weight: 800;
-  letter-spacing: -2px;
-  margin-bottom: 20px;
+  line-height: 1.1;
+  margin-bottom: 25px;
 }
 .hero__header p {
-  font-size: 22px;
+  font-size: 24px;
   color: var(--navy-light);
-  font-weight: 400;
 }
 
 /* ─── HERO GRID ──────────────────────────────────────────── */
@@ -345,6 +364,9 @@ a {
     grid-template-columns: 1fr;
   }
 }
+section {
+  padding: 100px 0;
+}
 
 /* ─── PROBLEM SECTION ────────────────────── */
 .section--problem {
@@ -353,7 +375,6 @@ a {
   background-image:
     radial-gradient(at 0% 0%, rgba(35, 148, 160, 0.05) 0px, transparent 50%),
     radial-gradient(at 100% 100%, rgba(39, 58, 104, 0.03) 0px, transparent 50%);
-  padding: 20px 0 20px 0;
 }
 
 .problem-label {
@@ -437,7 +458,6 @@ a {
 /* ─── SOLUTION SECTION ──────────────── */
 .section--solution {
   background-color: var(--navy);
-  padding: 40px 0 40px 0;
   color: var(--white);
   position: relative;
   overflow: hidden;
@@ -540,13 +560,13 @@ a {
 /* ─── PATHS SECTION (4-CARD BUNDLE SYSTEM) ──────────────── */
 .section--paths {
   background-color: var(--white);
-  padding: 40px 0 40px 0;
 }
 
 .path-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2x2 Grid on Desktop */
-  gap: 30px;
+  row-gap: 80px; /* Vertical space between top and bottom cards */
+  column-gap: 30px;
   margin-top: 60px;
 }
 
@@ -656,7 +676,7 @@ a {
 }
 
 .actual-price {
-  font-size: 36px;
+  font-size: 52px;
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 25px;
@@ -831,7 +851,7 @@ a {
 
 .course-price {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--navy);
 }
 .course-link {
@@ -839,6 +859,12 @@ a {
   font-size: 13px;
   color: var(--teal);
   text-decoration: none;
+}
+
+.pr-price {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .swiper-pagination {
@@ -1054,9 +1080,13 @@ a {
 
 /* ─── FOOTER ─────────────────────────────────────────────── */
 .footer {
-  background: var(--navy-deeper, #111e38);
-  background: #111e38;
+  background: var(--navy);
   padding: 80px 0 40px;
+}
+
+.footer__logo-img {
+  height: 65px;
+  margin-bottom: 25px;
 }
 .footer__top {
   display: grid;
@@ -1066,22 +1096,14 @@ a {
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.footer__logo {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 16px;
-}
+
 .footer__logo span {
   color: var(--teal);
 }
 .footer__brand p {
-  font-size: 14px;
-  line-height: 1.9;
-  color: rgba(255, 255, 255, 0.45);
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 24px;
 }
 .footer__contacts {
