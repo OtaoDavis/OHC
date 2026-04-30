@@ -537,8 +537,7 @@ a {
 
 /* SOLUTIN SECTION END */
 
-/* ─── PATHS SECTION (THE TRAJECTORY) ─────────────────────── */
-/* ─── PATHS SECTION (REFINED BORDERS & SHADOWS) ─────────── */
+/* ─── PATHS SECTION (4-CARD BUNDLE SYSTEM) ──────────────── */
 .section--paths {
   background-color: var(--white);
   padding: 40px 0 40px 0;
@@ -546,8 +545,8 @@ a {
 
 .path-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 Grid on Desktop */
+  gap: 30px;
   margin-top: 60px;
 }
 
@@ -558,98 +557,116 @@ a {
   flex-direction: column;
   transition: var(--transition);
   overflow: hidden;
-  /* Premium Multi-layered Shadow */
-  box-shadow:
-    0 10px 20px rgba(8, 2, 57, 0.02),
-    0 30px 60px rgba(8, 2, 57, 0.05);
+  box-shadow: 0 10px 30px rgba(8, 2, 57, 0.04);
   position: relative;
+  border: 1px solid var(--border);
 }
 
-/* Trader Path: Full Teal Border + Thick Top */
-.path-card-large--featured {
+/* Border Logic */
+.path-card--teal {
   border: 2px solid var(--teal);
   border-top: 8px solid var(--teal);
 }
-
-/* Wealth Builder Path: Full Navy Border */
-.path-card-large--navy {
+.path-card--navy {
   border: 2px solid var(--navy);
   border-top: 8px solid var(--navy);
 }
 
 .path-card-large:hover {
-  transform: translateY(-15px);
-  /* Stronger shadow on hover for "Lift" effect */
-  box-shadow:
-    0 20px 40px rgba(8, 2, 57, 0.05),
-    0 60px 100px rgba(8, 2, 57, 0.1);
+  transform: translateY(-12px);
+  box-shadow: 0 40px 80px rgba(8, 2, 57, 0.1);
 }
 
 .path-card-header {
-  padding: 60px 50px 40px;
-  background: var(--off-white); /* Subtle contrast for the header area */
+  padding: 40px;
+  background: var(--off-white);
   border-bottom: 1px solid var(--border);
 }
 
 .path-card-header h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
   color: var(--navy);
+}
+.perfect-for {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--teal);
+  display: block;
 }
 
 .path-card-body {
-  padding: 40px 50px 60px;
+  padding: 40px;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+
+.path-sub-label {
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  display: block;
+  color: var(--navy-light);
 }
 
 .path-list {
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 .path-list li {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 18px;
+  font-size: 14px;
   font-weight: 600;
-  font-size: 16px;
-  color: var(--navy);
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
 }
-
-/* Custom Checkmark for the list */
 .path-list li::before {
   content: "✓";
+  position: absolute;
+  left: 0;
   color: var(--teal);
   font-weight: 900;
-  font-size: 18px;
 }
 
-@media (max-width: 992px) {
+.outcome-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--navy-light);
+  padding: 20px;
+  background: var(--off-white);
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Pricing Footer */
+.path-card-footer {
+  padding: 0 40px 40px;
+}
+
+.value-anchor {
+  font-size: 14px;
+  color: var(--navy-light);
+  text-decoration: line-through;
+  opacity: 0.6;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.actual-price {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 25px;
+  display: block;
+}
+
+@media (max-width: 1100px) {
   .path-grid {
     grid-template-columns: 1fr;
   }
-  .path-card-header,
-  .path-card-body {
-    padding: 40px 30px;
-  }
-}
-
-.btn--outline {
-  background: transparent;
-  color: var(--teal);
-  border: 2px solid var(--teal);
-  justify-content: center;
-}
-
-.btn--outline:hover {
-  background: var(--teal);
-  color: var(--white);
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(35, 148, 160, 0.3);
 }
 /* PATHS SECTION END */
 
