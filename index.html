@@ -63,52 +63,110 @@
 
     <!-- HERO SECTION -->
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" style="padding: 60px 0">
       <div class="container">
-        <!-- Refined Header Section -->
+        <!-- HEADER: Wide container for single-line heading -->
         <div
           class="hero__header"
-          style="max-width: 1000px; margin: 0 auto 60px"
+          style="max-width: 1250px; margin: 0 auto 60px; text-align: center"
         >
-          <!-- Heading: Line break applied, teal maintained, uppercase removed -->
           <h1
             style="
               margin-bottom: 30px;
-              line-height: 1.1;
+              line-height: 1.15;
               text-transform: none;
               font-weight: 800;
+              font-size: clamp(32px, 5.2vw, 72px);
+              letter-spacing: -1px;
             "
           >
-            Your Journey to
-            <span class="teal-text" style="display: block"
-              >Financial Freedom</span
-            >
+            <!-- Forces Line 1 to stay together -->
+            <span style="display: block; white-space: nowrap">
+              Your Path to
+              <span class="teal-text" style="color: var(--teal)"
+                >Financial Freedom</span
+              >
+            </span>
+
+            <!-- Line 2 -->
+            <span style="display: block"> Starts Here </span>
           </h1>
 
-          <!-- Shortened Subheading -->
-          <div style="max-width: 850px; margin: 0 auto">
+          <!-- SUBHEADING: Unified muted style, weight 400 -->
+          <div style="max-width: 900px; margin: 0 auto">
             <p
               style="
-                font-size: 22px;
+                font-size: 21px;
                 color: var(--navy-light);
-                font-weight: 500;
-                line-height: 1.5;
+                font-weight: 400;
+                line-height: 1.6;
+                opacity: 0.9;
               "
             >
-              Learn how to build capital, structure investments, and create
-              long-term wealth.
+              From beginner to confident investor, OHC’s system gives you the
+              structure to turn income into wealth. No guesswork. No noise. Just
+              proven knowledge, strategy, and discipline.
             </p>
           </div>
         </div>
 
-        <div class="hero__grid">
+        <!-- HERO GRID -->
+        <div
+          class="hero__grid"
+          style="display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 24px"
+        >
           <!-- LEFT: VIDEO CARD (Triggers Modal) -->
-          <div class="hero-card card--video" id="openVideo">
-            <video autoplay muted loop playsinline>
+          <div
+            class="hero-card card--video"
+            id="openVideo"
+            style="
+              cursor: pointer;
+              background: #000;
+              border-radius: var(--radius);
+              overflow: hidden;
+              position: relative;
+              min-height: 450px;
+            "
+          >
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: left center;
+                opacity: 0.7;
+              "
+            >
               <source src="videos/intro.mp4" type="video/mp4" />
             </video>
-            <div class="play-btn-overlay">
-              <div class="play-btn">
+            <div
+              class="play-btn-overlay"
+              style="
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+              "
+            >
+              <div
+                class="play-btn"
+                style="
+                  width: 75px;
+                  height: 75px;
+                  background: #fff;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                "
+              >
                 <svg
                   width="24"
                   height="24"
@@ -122,18 +180,49 @@
           </div>
 
           <!-- MIDDLE: SPLIT CONTENT CARD -->
-          <div class="hero-card card--content">
+          <div
+            class="hero-card card--content"
+            style="
+              background: var(--teal-bg);
+              padding: 40px;
+              border-radius: var(--radius);
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+            "
+          >
             <div style="display: flex; flex-direction: column; height: 100%">
               <div
                 style="display: flex; gap: 25px; flex: 1; align-items: center"
               >
-                <div class="card-content-video">
-                  <video autoplay muted loop playsinline>
+                <div
+                  class="card-content-video"
+                  style="
+                    flex: 1;
+                    height: 240px;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    background: #000;
+                  "
+                >
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="width: 100%; height: 100%; object-fit: cover"
+                  >
                     <source src="videos/market-loop.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div style="flex: 1.2">
-                  <p style="font-size: 15px; color: var(--navy-light)">
+                  <p
+                    style="
+                      font-size: 15px;
+                      color: var(--navy-light);
+                      font-weight: 500;
+                    "
+                  >
                     Trading isn’t about being glued to a screen all day; it’s
                     about precision, timing, and discipline. Our approach
                     focuses on high-probability setups and systematic execution.
@@ -144,6 +233,18 @@
                 href="Dominate-your-time-1.pdf"
                 class="manifesto-link"
                 download
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                  color: var(--teal);
+                  font-weight: 700;
+                  text-decoration: none;
+                  font-size: 14px;
+                  margin-top: 20px;
+                  padding-top: 20px;
+                  border-top: 1px solid rgba(39, 58, 104, 0.1);
+                "
               >
                 <svg
                   width="20"
@@ -163,10 +264,42 @@
           </div>
 
           <!-- RIGHT: SLIDESHOW CARD -->
-          <div class="hero-card card--slideshow">
-            <div class="slideshow-container">
-              <img src="lifestyle1.png" alt="OHC Lifestyle 1" />
-              <img src="lifestyle2.png" alt="OHC Lifestyle 2" />
+          <div
+            class="hero-card card--slideshow"
+            style="
+              border-radius: var(--radius);
+              overflow: hidden;
+              position: relative;
+              min-height: 450px;
+              background: var(--off-white);
+            "
+          >
+            <div
+              class="slideshow-container"
+              style="width: 100%; height: 100%; position: relative"
+            >
+              <img
+                src="lifestyle1.png"
+                alt="OHC Lifestyle 1"
+                style="
+                  position: absolute;
+                  inset: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                "
+              />
+              <img
+                src="lifestyle2.png"
+                alt="OHC Lifestyle 2"
+                style="
+                  position: absolute;
+                  inset: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                "
+              />
             </div>
           </div>
         </div>
