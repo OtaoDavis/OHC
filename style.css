@@ -205,19 +205,35 @@ section {
 .card--video {
   background: #000;
   cursor: pointer;
+  overflow: hidden; /* Clips the overhanging edges */
+  position: relative;
 }
 .card--video video {
-  width: 100%;
+  /* 1. Force the video to be much wider than the container */
+  width: 130%;
   height: 100%;
+
+  /* 2. Position it absolutely */
+  position: absolute;
+  top: 0;
+
+  /* 3. Move it to the center of the container */
+  left: 50%;
+
+  /* 4. Shift it back by 50% of ITS OWN width to perfectly center it */
+  /* This ensures the 'over-scaling' happens equally on left and right */
+  transform: translateX(-50%);
+
   object-fit: cover;
-  /* FIX 1: Focus on the left side where the founder is */
-  object-position: left center;
   display: block;
-  transition: transform 0.8s ease;
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
   opacity: 0.7;
 }
 .card--video:hover video {
-  transform: scale(1.05);
+  /* We must include the -50% translateX so it stays centered while zooming */
+  transform: translateX(-50%) scale(1.1);
   opacity: 0.9;
 }
 
