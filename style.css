@@ -261,7 +261,7 @@ section {
   background: var(--teal);
 }
 .card--video:hover .play-btn svg {
-  fill: var(--white);
+  fill: var(--navy);
 }
 
 /* MIDDLE CARD */
@@ -341,12 +341,11 @@ section {
     transform: scale(1.15); /* Subtle zoom-in throughout the whole 12s */
   }
 }
-/* ─── VIDEO MODAL (FIX 2) ────────────────────────────────── */
+/* ─── VIDEO MODAL ────────────────────────────────── */
 .video-modal {
   position: fixed;
   inset: 0;
-  background: rgba(8, 2, 57, 0.95); /* Deep navy transparent overlay */
-  display: none; /* Hidden by default */
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 2000;
@@ -983,9 +982,7 @@ section {
 }
 
 .founder-signature {
-  margin-top: 40px;
-  padding-top: 30px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--grey-back);
 }
 
 .founder-name {

@@ -187,6 +187,7 @@
           </div>
 
           <!-- MIDDLE: SPLIT CONTENT CARD -->
+          <!-- MIDDLE: SPLIT CONTENT CARD -->
           <div
             class="hero-card card--content"
             style="
@@ -195,78 +196,52 @@
               border-radius: var(--radius);
               text-align: left;
               display: flex;
-              flex-direction: column;
+              align-items: center;
             "
           >
-            <div style="display: flex; flex-direction: column; height: 100%">
+            <div
+              style="display: flex; gap: 40px; align-items: center; width: 100%"
+            >
+              <!-- Video: Taller height (370px) to fill the card depth -->
               <div
-                style="display: flex; gap: 25px; flex: 1; align-items: center"
-              >
-                <div
-                  class="card-content-video"
-                  style="
-                    flex: 1;
-                    height: 240px;
-                    border-radius: 16px;
-                    overflow: hidden;
-                    background: #000;
-                  "
-                >
-                  <video
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    style="width: 100%; height: 100%; object-fit: cover"
-                  >
-                    <source src="videos/market-loop.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div style="flex: 1.2">
-                  <p
-                    style="
-                      font-size: 15px;
-                      color: var(--navy-light);
-                      font-weight: 500;
-                    "
-                  >
-                    Trading isn’t about being glued to a screen all day; it’s
-                    about precision, timing, and discipline. Our approach
-                    focuses on high-probability setups and systematic execution.
-                  </p>
-                </div>
-              </div>
-              <a
-                href="Dominate-your-time-1.pdf"
-                class="manifesto-link"
-                download
+                class="card-content-video"
                 style="
-                  display: flex;
-                  align-items: center;
-                  gap: 12px;
-                  color: var(--teal);
-                  font-weight: 700;
-                  text-decoration: none;
-                  font-size: 14px;
-                  margin-top: 20px;
-                  padding-top: 20px;
-                  border-top: 1px solid rgba(39, 58, 104, 0.1);
+                  flex: 1.2;
+                  height: 370px;
+                  border-radius: 24px;
+                  overflow: hidden;
+                  background: #000;
+                  box-shadow: 0 20px 40px rgba(39, 58, 104, 0.15);
                 "
               >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  style="width: 100%; height: 100%; object-fit: cover"
                 >
-                  <path
-                    d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
-                  />
-                </svg>
-                Download the OHC Trader Manifesto
-              </a>
+                  <source src="videos/market-loop.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <!-- Text: Updated and vertically centered -->
+              <div style="flex: 1">
+                <p
+                  style="
+                    font-size: 17px;
+                    color: var(--navy-light);
+                    font-weight: 500;
+                    line-height: 1.7;
+                    margin: 0;
+                  "
+                >
+                  Trading isn’t about being glued to a screen all day; it’s
+                  about precision, timing, and discipline. Our approach focuses
+                  on identifying high-probability setups, executing with
+                  clarity, and exiting efficiently—often within minutes.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -484,9 +459,9 @@
             Choose Your Path to <span class="teal-text">Financial Freedom</span>
           </h2>
           <p>
-            No matter your goal, there’s a clear path designed for you. Each
-            bundle builds progressively — so you’re not guessing what to learn
-            next.
+            Subscribe to the bundle and pathway that aligns with your current
+            stage on the journey to financial freedom or choose individual
+            courses based on your specific interests.
           </p>
         </div>
 
@@ -495,7 +470,7 @@
           <div class="path-card-large path-card--navy">
             <div class="path-card-header">
               <span class="perfect-for">Perfect for: New to markets</span>
-              <h3>Beginner Path</h3>
+              <h3>Foundation Path</h3>
             </div>
             <div class="path-card-body">
               <span class="path-sub-label">Includes:</span>
@@ -534,6 +509,7 @@
                 <li>Financial Markets Basics (Free)</li>
                 <li>Equity Analysis & Investments</li>
                 <li>LMRSS Day Trading System</li>
+                <li>Access Live OHC Trade Room Sessions</li>
               </ul>
               <span class="path-sub-label">Outcome:</span>
               <p class="outcome-text">
@@ -566,6 +542,9 @@
                 <li>Equity Analysis & Investments</li>
                 <li>Fixed Income Analysis & Investments</li>
                 <li>Derivatives 101</li>
+                <li>
+                  Access to Fixed Income, Equities and Derivatives Workshops
+                </li>
               </ul>
               <span class="path-sub-label">Outcome:</span>
               <p class="outcome-text">
@@ -602,10 +581,10 @@
             <div class="path-card-body">
               <span class="path-sub-label">Includes:</span>
               <ul class="path-list">
-                <li>All 5 Institutional Modules</li>
-                <li>LMRSS Operating System</li>
-                <li>Advanced Derivatives & Greeks</li>
-                <li>Direct Mentorship Access</li>
+                <li>Everything from all 3 paths</li>
+                <li>Trade Room Signal Alerts</li>
+                <li>Advanced Derivatives Strategies</li>
+                <li>Direct Group Mentorship Access</li>
               </ul>
               <span class="path-sub-label">Outcome:</span>
               <p class="outcome-text" style="background: white">
@@ -796,6 +775,7 @@
                   >On completion of this course, you will gain:</span
                 >
                 <ul class="curriculum-list">
+                  <li>Location Momentum Rotation Setup Signal (LMRSS)</li>
                   <li>
                     A comprehensive exploration of options trading strategies.
                   </li>
@@ -837,15 +817,19 @@
           <span class="course-category">Built in Real Time</span>
           <h2>The Mindset of a Professional</h2>
           <p>
-            Success in the markets isn't about the trade—it's about the system.
-            We've built an ecosystem that mirrors the operations of a
-            professional trading desk.
+            Inside the OHC Traderoom, you’re learning from real institutional
+            experience, not theory. Gabriel Olumide Odediran brings over 20
+            years of global market expertise, with a track record spanning
+            top-tier institutions such as Deutsche Bank, S&P, Lloyds Banking
+            Group, and MeDirect.
           </p>
           <p>
-            My journey started with capital, grew through disciplined trading,
-            and evolved into a structured wealth system. OHC is the distillation
-            of that 18-year evolution, designed to give you the same
-            institutional edge.
+            He has managed multi-billion-dollar portfolios, generated
+            significant revenue, and led high-level investment and risk
+            strategies. Now, through OHC, he translates that experience into
+            clear, actionable insights giving members a structured, disciplined
+            approach to trading and investing, and the tools needed to
+            confidently navigate today’s markets.
           </p>
 
           <div class="founder-signature">
@@ -930,7 +914,7 @@
             Your Path to Autonomy <span class="teal-text">Starts Here.</span>
           </h2>
           <p style="margin-bottom: 50px">
-            Join 14,000+ students who have moved beyond retail speculation to
+            Join 14,000 students who have moved beyond retail speculation to
             institutional mastery.
           </p>
           <a href="#ecosystem" class="btn btn--teal">Access the Foundations</a>
@@ -962,22 +946,25 @@
           <div class="footer__links">
             <div class="footer__col">
               <div class="footer__col-ttl">Programs</div>
-              <a href="course-basics.html">Markets Basics (Free)</a>
-              <a href="course-equity.html">Equity Analysis — $250</a>
-              <a href="course-fixed-income.html">Fixed Income — $250</a>
-              <a href="course-lmrss-day-trading.html"
-                >LMRSS Day Trading — $1,000</a
-              >
-              <a href="course-advanced-derivatives.html"
-                >Derivatives — $1,000</a
-              >
+              <a href="course-basics.html">Markets Basics</a>
+              <a href="course-equity.html">Equity Analysis</a>
+              <a href="course-fixed-income.html">Fixed Income</a>
+              <a href="course-lmrss-day-trading.html">LMRSS Day Trading</a>
+              <a href="course-advanced-derivatives.html">Derivatives</a>
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Company</div>
-              <a href="#">About OHC</a>
-              <a href="#">Our Philosophy</a>
-              <a href="#">The LMRSS System</a>
-              <a href="#">Contact</a>
+              <a href="about.html">About OHC</a>
+              <a href="about.html">Our Philosophy</a>
+              <a href="#flagship">The 3-Bucket System</a>
+              <a href="mailto:support@ohctraderroom.com">Contact</a>
+            </div>
+            <div class="footer__col">
+              <div class="footer__col-ttl">Bundles</div>
+              <a href="#paths">Foundation Path</a>
+              <a href="#paths">Trader Path</a>
+              <a href="#paths">Investor Path</a>
+              <a href="#paths">Ultimate Path</a>
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Legal</div>
