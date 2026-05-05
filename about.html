@@ -6,23 +6,26 @@
     <title>About OHC | Institutional Market Intelligence</title>
 
     <!-- Universal Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Page Specific Styles -->
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <!-- HEADER -->
     <nav class="nav">
       <div class="container nav__inner">
         <a href="index.html" class="nav__logo"
-          ><img src="logo-dark.png" alt="OHC Logo"
+          ><img src="images/logo-dark.png" alt="OHC Logo"
         /></a>
-        <ul class="nav__links">
+        <ul class="nav__links" id="navLinks">
           <li><a href="about.html">About</a></li>
           <li><a href="index.html#solution">Framework</a></li>
           <li><a href="index.html#ecosystem">Courses</a></li>
         </ul>
-        <a href="#" class="btn btn--teal">Login &nbsp; →</a>
+        <a href="#" class="btn btn--teal nav__cta">Login &nbsp; →</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
 
@@ -31,10 +34,10 @@
       <div class="container about-hero__grid">
         <div class="about-visuals">
           <div class="about-img-main">
-            <img src="img2.png" alt="OHC Professional" />
+            <img src="images/img2.png" alt="OHC Professional" />
           </div>
           <div class="about-img-sub">
-            <img src="img3.png" alt="Trading Desk" />
+            <img src="images/img3.png" alt="Trading Desk" />
           </div>
           <div class="about-rating-card">
             <div class="stars">★★★★★</div>
@@ -148,7 +151,7 @@
         <div class="footer__top">
           <div class="footer__brand">
             <img
-              src="OHC-Trade-Room-light.png"
+              src="images/OHC-Trade-Room-light.png"
               alt="OHC Trade Room"
               class="footer__logo-img"
             />
@@ -202,5 +205,19 @@
         </div>
       </div>
     </footer>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+    </script>
   </body>
 </html>
