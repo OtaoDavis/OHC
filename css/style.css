@@ -231,6 +231,15 @@ section {
     opacity 0.8s ease;
   opacity: 0.7;
 }
+.card--video .video-poster {
+  transition:
+    transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1),
+    opacity 0.4s ease;
+}
+.card--video:hover .video-poster {
+  transform: scale(1.08);
+  opacity: 1;
+}
 .card--video:hover video {
   /* We must include the -50% translateX so it stays centered while zooming */
   transform: translateX(-50%) scale(1.1);
@@ -257,11 +266,11 @@ section {
   transition: var(--transition);
 }
 .card--video:hover .play-btn {
-  transform: scale(1.15);
-  background: var(--teal);
+  transform: scale(1.1);
+  background: var(--teal) !important;
 }
 .card--video:hover .play-btn svg {
-  fill: var(--navy);
+  fill: #ffffff !important;
 }
 
 /* MIDDLE CARD */
@@ -799,6 +808,7 @@ section {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  min-height: 650px;
   transition: var(--transition);
   box-shadow: 0 10px 30px rgba(39, 58, 104, 0.03);
 }
@@ -847,6 +857,8 @@ section {
   padding: 0;
   margin-bottom: 40px;
   flex-grow: 1;
+  column-count: 2;
+  column-gap: 32px;
 }
 
 .curriculum-list li {
@@ -872,6 +884,15 @@ section {
   justify-content: space-between;
   padding-top: 25px;
   border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+@media (max-width: 900px) {
+  .curriculum-list {
+    column-count: 1;
+  }
+  .course-card-expanded {
+    min-height: 0;
+  }
 }
 
 .course-price {
@@ -981,10 +1002,6 @@ section {
   margin-bottom: 25px;
 }
 
-.founder-signature {
-  border-top: 1px solid var(--grey-back);
-}
-
 .founder-name {
   font-weight: 800;
   font-size: 18px;
@@ -996,7 +1013,7 @@ section {
 }
 
 .founder-title {
-  font-size: 12px;
+  font-size: 14.3px;
   font-weight: 800;
   color: var(--teal);
   text-transform: uppercase;
@@ -1237,7 +1254,6 @@ section {
 
 /* ─── TABLET & BELOW (max 768px) ────────────────────────── */
 @media (max-width: 768px) {
-
   /* Show hamburger */
   .hamburger {
     display: flex;
@@ -1490,7 +1506,6 @@ section {
 
 /* ─── SMALL MOBILE (max 480px) ──────────────────────────── */
 @media (max-width: 480px) {
-
   .topbar {
     display: none;
   }

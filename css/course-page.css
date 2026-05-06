@@ -64,6 +64,11 @@ body {
   gap: 12px; /* Space between button and text */
 }
 
+.nav--course .nav__logo img {
+  height: 65px !important;
+  width: auto !important;
+}
+
 /* The muted, smaller note */
 .scroll-note {
   font-size: 10px; /* Smaller size */
