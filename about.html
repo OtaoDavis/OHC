@@ -22,11 +22,40 @@
           <li><a href="index.html#solution">Framework</a></li>
           <li><a href="index.html#ecosystem">Courses</a></li>
         </ul>
-        <a
-          href="https://www.ohctraderoom.com/login"
-          class="btn btn--teal nav__cta"
-          >Login &nbsp; →</a
-        >
+        <!-- Auth Container -->
+        <div class="nav__auth">
+          <!-- Login Button (visible when NOT logged in) -->
+          <a
+            href="https://www.ohctraderoom.com/login"
+            target="_blank"
+            class="btn btn--teal nav__login"
+            >Login &nbsp; →</a
+          >
+          <!-- User Menu (visible when logged in) -->
+          <div class="nav__user-menu" id="userMenu">
+            <button class="user-avatar-btn" id="userAvatarBtn" aria-label="User menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </button>
+            <div class="user-dropdown" id="userDropdown">
+              <a href="https://www.ohctraderoom.com/library">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                Dashboard
+              </a>
+              <a href="https://www.ohctraderoom.com/settings">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                Account Settings
+              </a>
+              <div class="user-dropdown__divider"></div>
+              <a href="https://www.ohctraderoom.com/logout" class="user-dropdown__logout">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Logout
+              </a>
+            </div>
+          </div>
+        </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -222,6 +251,33 @@
           navLinks.classList.remove("active");
         });
       });
+
+      // ─── User Menu Toggle ───
+      const userMenu = document.getElementById("userMenu");
+      const userAvatarBtn = document.getElementById("userAvatarBtn");
+      if (userAvatarBtn && userMenu) {
+        userAvatarBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          userMenu.classList.toggle("open");
+        });
+        document.addEventListener("click", (e) => {
+          if (!userMenu.contains(e.target)) {
+            userMenu.classList.remove("open");
+          }
+        });
+      }
+
+      // ─── Kajabi Auth Detection ───
+      (function detectAuth() {
+        const cookies = document.cookie;
+        const isLoggedIn =
+          cookies.includes("_kjb_session") ||
+          cookies.includes("kjb_logged_in") ||
+          cookies.includes("_session_id");
+        if (isLoggedIn) {
+          document.body.classList.add("is-authenticated");
+        }
+      })();
     </script>
   </body>
 </html>

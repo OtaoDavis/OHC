@@ -343,12 +343,12 @@
                 >
                   One-time payment.
                 </p>
-                <a
-                  href="#"
-                  class="btn btn--white"
-                  style="background: white; color: var(--navy)"
-                  >Register Now</a
+                <button
+                  class="btn btn--white paystack-btn"
+                  data-course-id="fixed_income"
                 >
+                  Register Now
+                </button>
               </div>
             </div>
           </div>
@@ -541,5 +541,40 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div id="checkoutModal" class="modal hidden">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__title">Course Checkout</div>
+          <div class="modal__close" onclick="closeModal()">✕</div>
+        </div>
+
+        <div class="modal__body">
+          <div class="modal__course">
+            <img id="modalCourseImage" src="" />
+            <div>
+              <div id="modalCourseTitle" class="modal__course-name"></div>
+              <div id="modalCoursePrice" class="modal__price"></div>
+            </div>
+          </div>
+
+          <div class="modal__form">
+            <input id="modalFirstName" placeholder="First Name" />
+            <input id="modalLastName" placeholder="Last Name" />
+            <input id="modalEmail" placeholder="Email" />
+            <input id="modalPhone" placeholder="Phone Number" />
+
+            <button id="modalPayBtn" class="btn btn--teal modal__btn">
+              Proceed to Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- inline.js MUST load first so PaystackPop is defined before paystack.js runs -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/paystack.js"></script>
   </body>
 </html>
