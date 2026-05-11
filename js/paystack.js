@@ -10,29 +10,29 @@ const COURSE_CONFIG = {
 
   equity: {
     id: "equity",
-    name: "Equity Analysis",
-    amount: 25000,
-    currency: "USD",
-    image: "images/equity.jpg",
-    kajabi_offer: "EQUITY_OFFER_ID",
+    name: "	Equity Analysis and Investments",
+    amount: 100, // KES 1.00 — update to real amount before going live
+    currency: "KES",
+    image: "images/equity.png",
+    kajabi_offer: "CJLCQpeE",
   },
 
   derivatives: {
     id: "derivatives",
-    name: "Advanced Derivatives",
-    amount: 100000,
-    currency: "USD",
-    image: "images/derivatives.jpg",
-    kajabi_offer: "DERIVATIVES_OFFER_ID",
+    name: "Derivatives 101, Instruments, Valuation, Greeks and Strategies",
+    amount: 100, // KES 1.00 — update to real amount before going live
+    currency: "KES",
+    image: "images/derivatives.png",
+    kajabi_offer: "Hryxyppr",
   },
 
   lmrss: {
     id: "lmrss",
     name: "LMRSS Day Trading",
-    amount: 100000,
-    currency: "USD",
-    image: "images/lmrss.jpg",
-    kajabi_offer: "LMRSS_OFFER_ID",
+    amount: 100, // KES 1.00 — update to real amount before going live
+    currency: "KES",
+    image: "images/lmrss.png",
+    kajabi_offer: "2wijefFy",
   },
 };
 
