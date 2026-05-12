@@ -545,6 +545,7 @@ section {
   background-image:
     radial-gradient(at 0% 0%, rgba(35, 148, 160, 0.05) 0px, transparent 50%),
     radial-gradient(at 100% 100%, rgba(39, 58, 104, 0.03) 0px, transparent 50%);
+  padding: 100px 0;
 }
 
 .problem-label {
@@ -1258,6 +1259,7 @@ section {
 .footer {
   background: var(--navy);
   padding: 80px 0 40px;
+  color: var(--white) !important;
 }
 
 .footer__logo-img {
@@ -1290,7 +1292,7 @@ section {
 .footer__contacts a {
   font-family: var(--font-mono);
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--white);
   transition: color 0.25s;
   letter-spacing: 0.5px;
 }
@@ -1317,11 +1319,11 @@ section {
 }
 .footer__col a {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--white);
   transition: color 0.25s;
 }
 .footer__col a:hover {
-  color: var(--white);
+  color: var(--teal);
 }
 .footer__bottom {
   display: flex;
