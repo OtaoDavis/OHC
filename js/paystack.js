@@ -34,6 +34,39 @@ const COURSE_CONFIG = {
     image: "images/lmrss.png",
     kajabi_offer: "2wijefFy",
   },
+
+  foundation: {
+    id: "foundation-path",
+    name: "Foundation Path Bundle",
+    amount: 34900, // $349.00 in cents
+    currency: "USD",
+    image: "images/foundation.png",
+    kajabi_offer: "FOUNDATION_OFFER_ID",
+  },
+  trader: {
+    id: "trader-path",
+    name: "Trader Path Bundle",
+    amount: 89900, // $899.00 in cents
+    currency: "USD",
+    image: "images/trader.png",
+    kajabi_offer: "TRADER_OFFER_ID",
+  },
+  investor: {
+    id: "investor-path",
+    name: "Investor Path Bundle",
+    amount: 109900, // $1,099.00 in cents
+    currency: "USD",
+    image: "images/investor.png",
+    kajabi_offer: "INVESTOR_OFFER_ID",
+  },
+  ultimate: {
+    id: "ultimate-path",
+    name: "Ultimate Path Bundle",
+    amount: 149900, // $1,499.00 in cents
+    currency: "USD",
+    image: "images/ultimate.png",
+    kajabi_offer: "ULTIMATE_OFFER_ID",
+  },
 };
 
 /* -------------------------

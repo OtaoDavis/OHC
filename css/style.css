@@ -197,7 +197,7 @@ body.is-authenticated .nav__user-menu {
   padding: 8px 0;
 }
 .user-dropdown::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -6px;
   right: 16px;
@@ -279,6 +279,7 @@ body.is-authenticated .nav__user-menu {
   background: var(--teal);
   color: var(--white);
 }
+
 .btn--teal:hover {
   background: transparent;
   color: var(--teal);
