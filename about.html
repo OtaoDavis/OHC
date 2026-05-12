@@ -33,24 +33,73 @@
           >
           <!-- User Menu (visible when logged in) -->
           <div class="nav__user-menu" id="userMenu">
-            <button class="user-avatar-btn" id="userAvatarBtn" aria-label="User menu">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
+            <button
+              class="user-avatar-btn"
+              id="userAvatarBtn"
+              aria-label="User menu"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
               </svg>
             </button>
             <div class="user-dropdown" id="userDropdown">
               <a href="https://www.ohctraderoom.com/library">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="3" width="7" height="7" rx="1" />
+                  <rect x="3" y="14" width="7" height="7" rx="1" />
+                  <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
                 Dashboard
               </a>
               <a href="https://www.ohctraderoom.com/settings">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                  />
+                </svg>
                 Account Settings
               </a>
               <div class="user-dropdown__divider"></div>
-              <a href="https://www.ohctraderoom.com/logout" class="user-dropdown__logout">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              <a
+                href="https://www.ohctraderoom.com/logout"
+                class="user-dropdown__logout"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                  <polyline points="16 17 21 12 16 7" />
+                  <line x1="21" y1="12" x2="9" y2="12" />
+                </svg>
                 Logout
               </a>
             </div>
@@ -188,7 +237,7 @@
               alt="OHC Trade Room"
               class="footer__logo-img"
             />
-            <p>
+            <p style="color: #fff">
               Institutional intelligence.<br />Systematic execution.<br />Generational
               wealth.
             </p>
@@ -202,22 +251,25 @@
           <div class="footer__links">
             <div class="footer__col">
               <div class="footer__col-ttl">Programs</div>
-              <a href="course-basics.html">Markets Basics (Free)</a>
-              <a href="course-equity.html">Equity Analysis — $250</a>
-              <a href="course-fixed-income.html">Fixed Income — $250</a>
-              <a href="course-lmrss-day-trading.html"
-                >LMRSS Day Trading — $1,000</a
-              >
-              <a href="course-advanced-derivatives.html"
-                >Derivatives — $1,000</a
-              >
+              <a href="course-basics.html">Markets Basics</a>
+              <a href="course-equity.html">Equity Analysis</a>
+              <a href="course-fixed-income.html">Fixed Income</a>
+              <a href="course-lmrss.html">LMRSS Day Trading</a>
+              <a href="course-derivatives.html">Derivatives</a>
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Company</div>
-              <a href="#">About OHC</a>
-              <a href="#">Our Philosophy</a>
-              <a href="#">The LMRSS System</a>
-              <a href="#">Contact</a>
+              <a href="about.html">About OHC</a>
+              <a href="about.html">Our Philosophy</a>
+              <a href="#flagship">The 3-Bucket System</a>
+              <a href="mailto:support@ohctraderroom.com">Contact</a>
+            </div>
+            <div class="footer__col">
+              <div class="footer__col-ttl">Bundles</div>
+              <a href="#paths">Foundation Path</a>
+              <a href="#paths">Trader Path</a>
+              <a href="#paths">Investor Path</a>
+              <a href="#paths">Ultimate Path</a>
             </div>
             <div class="footer__col">
               <div class="footer__col-ttl">Legal</div>
