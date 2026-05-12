@@ -1335,13 +1335,13 @@ section {
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.2);
+  color: color(var --white);
   text-transform: uppercase;
 }
 .footer__disc {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.2);
-  max-width: 400px;
+  color: var(--white);
+  max-width: 600px;
   text-align: right;
   line-height: 1.6;
 }
