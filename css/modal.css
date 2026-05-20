@@ -1,0 +1,128 @@
+/* course modal */
+/* =========================
+   COURSE CHECKOUT MODAL
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 30, 56, 0.75); /* navy-deeper overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal__content {
+  width: 100%;
+  max-width: 520px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border);
+  animation: modalPop 0.25s ease-out;
+}
+
+@keyframes modalPop {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* HEADER */
+.modal__header {
+  padding: 25px 30px;
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__title {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.modal__close {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+/* BODY */
+.modal__body {
+  padding: 30px;
+}
+
+.modal__course {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal__course img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.modal__course-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy);
+}
+
+.modal__price {
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  color: var(--teal);
+  margin-top: 5px;
+}
+
+/* INPUTS */
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal__form input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  transition: var(--transition);
+}
+
+.modal__form input:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(35, 148, 160, 0.15);
+}
+
+/* BUTTON */
+.modal__btn {
+  margin-top: 15px;
+  width: 100%;
+}

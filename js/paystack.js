@@ -2,8 +2,8 @@ const COURSE_CONFIG = {
   fixed_income: {
     id: "fixed_income",
     name: "Fixed Income Analysis & Investments",
-    amount: 100, // KES 1.00 — update to real amount before going live
-    currency: "KES",
+    amount: 25000, // USD 250.00
+    currency: "USD",
     image: "images/fixed-income.jpg",
     kajabi_offer: "cvXpLZGs",
   },
@@ -11,8 +11,8 @@ const COURSE_CONFIG = {
   equity: {
     id: "equity",
     name: "	Equity Analysis and Investments",
-    amount: 100, // KES 1.00 — update to real amount before going live
-    currency: "KES",
+    amount: 25000, // USD 250.00
+    currency: "USD",
     image: "images/equity.png",
     kajabi_offer: "CJLCQpeE",
   },
@@ -20,8 +20,8 @@ const COURSE_CONFIG = {
   derivatives: {
     id: "derivatives",
     name: "Derivatives 101, Instruments, Valuation, Greeks and Strategies",
-    amount: 100, // KES 1.00 — update to real amount before going live
-    currency: "KES",
+    amount: 100000, // USD 1,000.00
+    currency: "USD",
     image: "images/derivatives.png",
     kajabi_offer: "Hryxyppr",
   },
@@ -29,8 +29,8 @@ const COURSE_CONFIG = {
   lmrss: {
     id: "lmrss",
     name: "LMRSS Day Trading",
-    amount: 100, // KES 1.00 — update to real amount before going live
-    currency: "KES",
+    amount: 100000, // USD 1,000.00
+    currency: "USD",
     image: "images/lmrss.png",
     kajabi_offer: "2wijefFy",
   },
@@ -40,32 +40,32 @@ const COURSE_CONFIG = {
     name: "Foundation Path Bundle",
     amount: 34900, // $349.00 in cents
     currency: "USD",
-    image: "images/foundation.png",
-    kajabi_offer: "FOUNDATION_OFFER_ID",
+    image: "images/foundation.jpg",
+    kajabi_offer: "35HR5S5m",
   },
   trader: {
     id: "trader-path",
     name: "Trader Path Bundle",
     amount: 89900, // $899.00 in cents
-    currency: "USD",
-    image: "images/trader.png",
-    kajabi_offer: "TRADER_OFFER_ID",
+    currency: "KES",
+    image: "images/trader.jpg",
+    kajabi_offer: "GU6kJScX",
   },
   investor: {
     id: "investor-path",
     name: "Investor Path Bundle",
     amount: 109900, // $1,099.00 in cents
     currency: "USD",
-    image: "images/investor.png",
-    kajabi_offer: "INVESTOR_OFFER_ID",
+    image: "images/investor.webp",
+    kajabi_offer: "Eag8wEbS",
   },
   ultimate: {
     id: "ultimate-path",
     name: "Ultimate Path Bundle",
     amount: 149900, // $1,499.00 in cents
-    currency: "USD",
-    image: "images/ultimate.png",
-    kajabi_offer: "ULTIMATE_OFFER_ID",
+    currency: "KES",
+    image: "images/ultimate.jpg",
+    kajabi_offer: "yDT9hkwp",
   },
 };
 
@@ -153,7 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
          PAYSTACK CHECKOUT
       -------------------------- */
       let handler = PaystackPop.setup({
-        key: "pk_test_2747ccc10e2497ac0d25e8064e17e99018c8d630",
+        //key: "pk_live_0c194eb0ca57df83c3faef74a63f2e652526a244", //live key
+        key: "pk_test_b6f14decc508a38e3f525fd5d54f200bde1b01c3", //test key
 
         email: email,
         firstname: firstName, // Paystack native fields — appear on the receipt
