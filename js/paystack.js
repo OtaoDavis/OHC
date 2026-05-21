@@ -47,7 +47,7 @@ const COURSE_CONFIG = {
     id: "trader-path",
     name: "Trader Path Bundle",
     amount: 89900, // $899.00 in cents
-    currency: "KES",
+    currency: "USD",
     image: "images/trader.jpg",
     kajabi_offer: "GU6kJScX",
   },
@@ -63,7 +63,7 @@ const COURSE_CONFIG = {
     id: "ultimate-path",
     name: "Ultimate Path Bundle",
     amount: 149900, // $1,499.00 in cents
-    currency: "KES",
+    currency: "USD",
     image: "images/ultimate.jpg",
     kajabi_offer: "yDT9hkwp",
   },
