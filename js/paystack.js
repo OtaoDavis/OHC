@@ -198,7 +198,10 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
         callback: function (response) {
-          window.location.href = `/success.html?ref=${response.reference}&course=${encodeURIComponent(selectedCourse.name)}`;
+          const successUrl = new URL("success.html", window.location.href);
+          successUrl.searchParams.set("ref", response.reference);
+          successUrl.searchParams.set("course", selectedCourse.name);
+          window.location.href = successUrl.toString();
         },
 
         onClose: function () {
