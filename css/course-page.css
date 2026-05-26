@@ -34,6 +34,16 @@ body {
   margin: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.section-label.text-center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 2. NAVIGATION */
 .nav--course {
   background: var(--white) !important;
@@ -42,6 +52,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.nav--course .btn--outline {
+  border: 1px solid var(--navy) !important;
+  padding: 10px 24px !important;
+  font-weight: 600 !important;
+  white-space: nowrap;
 }
 
 /* 3. HERO SPLIT SECTION */
@@ -264,6 +281,7 @@ body {
 
 .module__header {
   padding: 30px 40px;
+  text-align: center;
 }
 
 .module__header span {
@@ -448,6 +466,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .course-hero__actions {
+    align-items: center;
+  }
+
   .pr-row {
     flex-direction: column;
     text-align: center;
@@ -459,6 +481,51 @@ body {
   }
   .course-hero__visual {
     order: 2;
+  }
+
+  .nav--course .nav__logo img {
+    height: 56px !important;
+  }
+
+  .nav--course .btn--outline {
+    padding: 9px 18px !important;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 15px;
+  }
+
+  .nav--course .nav__logo img {
+    height: 50px !important;
+  }
+
+  .nav--course .btn--outline {
+    padding: 8px 14px !important;
+    font-size: 12px;
+  }
+
+  .pricing__stack {
+    margin-top: 20px !important;
+  }
+
+  .pr-row,
+  .pr-row__left,
+  .pr-row__right {
+    text-align: center !important;
+    align-items: center;
+  }
+
+  .pr-row__left,
+  .pr-row__right {
+    width: 100%;
+  }
+
+  .pr-row .btn {
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 

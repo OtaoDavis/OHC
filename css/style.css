@@ -1,3 +1,10 @@
+@media (min-width: 769px) {
+  .mobile-nav-header,
+  .mobile-nav-logo,
+  .mobile-nav-login {
+    display: none !important;
+  }
+}
 /* ═══════════════════════════════════════════════════════════
    OHC TRADE ROOM — Institutional Design System (Light)
 ═══════════════════════════════════════════════════════════ */
@@ -278,10 +285,12 @@ body.is-authenticated .nav__user-menu {
 .btn--teal {
   background: var(--teal);
   color: var(--white);
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
 }
 
 .btn--teal:hover {
-  background: transparent;
+  background: white;
   color: var(--teal);
   border: 2px solid var(--teal);
   transform: translateY(-4px);
@@ -1415,6 +1424,36 @@ section {
     list-style: none;
   }
 
+  .mobile-nav-header {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .mobile-nav-logo img {
+    height: 40px;
+    width: auto;
+    margin: 0 auto 18px auto;
+    display: block;
+  }
+  .mobile-nav-login {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 100px;
+    font-weight: 700;
+  }
+  @media (min-width: 769px) {
+    .mobile-nav-header,
+    .mobile-nav-logo,
+    .mobile-nav-login {
+      display: none !important;
+    }
+  }
+
   .nav__links.active {
     right: 0;
   }
@@ -1434,6 +1473,9 @@ section {
   /* Hide login button text on mobile, keep user avatar */
   .nav__login {
     display: none !important;
+  }
+  .mobile-nav-login {
+    display: block !important;
   }
   /* User avatar stays visible on mobile */
   .nav__user-menu {
