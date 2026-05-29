@@ -153,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
          PAYSTACK CHECKOUT
       -------------------------- */
       let handler = PaystackPop.setup({
-        //key: "pk_live_0c194eb0ca57df83c3faef74a63f2e652526a244", //live key
-        key: "pk_test_b6f14decc508a38e3f525fd5d54f200bde1b01c3", //test key
+        key: "pk_live_0c194eb0ca57df83c3faef74a63f2e652526a244", //live key
+        // key: "pk_test_b6f14decc508a38e3f525fd5d54f200bde1b01c3", //test key
 
         email: email,
         firstname: firstName, // Paystack native fields — appear on the receipt
